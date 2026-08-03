@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lens Radar — AI 眼镜素材雷达</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/preview.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <nav><a class="brand" href="/">LENS<span>RADAR</span></a><span class="live"><i></i> DAILY SIGNALS</span></nav>
+        <div class="hero-copy"><p class="eyebrow">AI GLASSES MEDIA INTELLIGENCE</p><h1>AI 眼镜<em>每日追踪</em></h1><p class="intro">聚合国内外 AI 眼镜品牌发布的官方视频、KV 与产品页素材</p></div>
+        <div class="stats"><div><b id="total">0</b><span>已归档素材</span></div><div><b id="brands">0</b><span>追踪品牌</span></div><div><b>08:30</b><span>每日自动刷新</span></div></div>
+      </section>
+      <section class="controls">
+        <div class="filters" id="filters"></div>
+        <div class="actions"><span id="updated">等待首次同步</span><button id="refresh">立即扫描 <span>↗</span></button></div>
+      </section>
+      <section id="loading" class="loading">正在建立今日素材流…</section>
+      <section id="empty" class="empty hidden">暂未收集到新素材。请检查来源配置或点击“立即扫描”。</section>
+      <section class="grid" id="grid"></section>
+      <footer>仅收录已配置品牌的公开官方页面、官方频道 RSS 与发布素材。点击卡片将在原始来源打开。</footer>
+    </main>
+    <dialog id="preview"><button class="close" aria-label="关闭预览">×</button><div id="player"></div><div class="preview-info"><span id="preview-brand"></span><h2 id="preview-title"></h2><a id="preview-source" target="_blank" rel="noreferrer">在官方来源打开 ↗</a></div></dialog>
+    <template id="card"><article class="card"><div class="media"><span class="play">▶</span><span class="kind"></span></div><div class="card-meta"><span class="brand-name"></span><time></time></div><h2></h2><div class="product"></div><a target="_blank" rel="noreferrer">查看官方素材 <span>↗</span></a></article></template>
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "ai-glasses-media-radar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "refresh": "node server.js --refresh"
+  }
+}

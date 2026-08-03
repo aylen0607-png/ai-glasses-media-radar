@@ -1,0 +1,55 @@
+[
+  {
+    "id": "xiaomi-ai", "brand": "小米", "product": "小米 AI 眼镜", "region": "中国", "kind": "page", "enabled": true,
+    "url": "https://www.mi.com/global/discover/article?awc=23677_1751494786_be3ab9f4dc5a124b305ffc5963869953&id=5172",
+    "updatedAt": "2025-06-26",
+    "featured": [{ "title": "小米 AI 眼镜｜官方产品发布与主视觉", "url": "https://www.mi.com/global/discover/article?awc=23677_1751494786_be3ab9f4dc5a124b305ffc5963869953&id=5172", "type": "Official KV / launch page", "publishedAt": "2025-06-26" }]
+  },
+  {
+    "id": "rayneo-v3", "brand": "雷鸟 RayNeo", "product": "RayNeo V3", "region": "中国", "kind": "page", "enabled": true,
+    "url": "https://www.rayneo.com/blogs/news/from-real-reviews-by-xpert-rayneo-reveals-the-latest-xr-glasses-rayneo-air-3s-on-the-mwc-2025-a-sound-miracle-eye-friendly-and-immersive",
+    "updatedAt": "2025-03-03",
+    "featured": [{ "title": "RayNeo V3｜官方产品介绍", "url": "https://www.rayneo.com/blogs/news/from-real-reviews-by-xpert-rayneo-reveals-the-latest-xr-glasses-rayneo-air-3s-on-the-mwc-2025-a-sound-miracle-eye-friendly-and-immersive", "type": "Official KV / product page", "publishedAt": "2025-03-03" }]
+  },
+  {
+    "id": "rayneo-x", "brand": "雷鸟 RayNeo", "product": "RayNeo X 系列", "region": "中国", "kind": "page", "enabled": true,
+    "url": "https://www.rayneo.com/blogs/news/from-real-reviews-by-xpert-rayneo-reveals-the-latest-xr-glasses-rayneo-air-3s-on-the-mwc-2025-a-sound-miracle-eye-friendly-and-immersive",
+    "updatedAt": "2025-03-03",
+    "featured": [{ "title": "RayNeo X 系列｜官方全彩 AR 产品介绍", "url": "https://www.rayneo.com/blogs/news/from-real-reviews-by-xpert-rayneo-reveals-the-latest-xr-glasses-rayneo-air-3s-on-the-mwc-2025-a-sound-miracle-eye-friendly-and-immersive", "type": "Official KV / product page", "publishedAt": "2025-03-03" }]
+  },
+  {
+    "id": "rokid-glasses", "brand": "Rokid", "product": "Rokid Glasses", "region": "中国 / 全球", "kind": "page", "enabled": true,
+    "url": "https://global.rokid.com/products/rokid-glasses", "updatedAt": "2026-07-10",
+    "featured": [{ "title": "Rokid Glasses｜官方产品 KV", "url": "https://global.rokid.com/products/rokid-glasses", "type": "Official KV / product page", "publishedAt": "2026-07-10" }]
+  },
+  {
+    "id": "rokid-video", "brand": "Rokid", "product": "Rokid Glasses / Style", "region": "中国 / 全球", "kind": "page", "enabled": true,
+    "url": "https://global.rokid.com/pages/video-gallery", "updatedAt": "2026-07-13",
+    "featured": [{ "title": "Rokid｜官方视频素材库", "url": "https://global.rokid.com/pages/video-gallery", "type": "Official video gallery", "publishedAt": "2026-07-13" }]
+  },
+  {
+    "id": "quark-s1", "brand": "夸克", "product": "夸克 AI 眼镜 S1", "region": "中国", "kind": "page", "enabled": true,
+    "url": "https://www.xinhuanet.com/tech/20251127/08d77754e3654647b345f1b71ca496c1/c.html", "updatedAt": "2025-11-27",
+    "featured": [{ "title": "夸克 AI 眼镜 S1｜发布资料与主视觉", "url": "https://www.xinhuanet.com/tech/20251127/08d77754e3654647b345f1b71ca496c1/c.html", "type": "Launch coverage / KV", "publishedAt": "2025-11-27" }]
+  },
+  {
+    "id": "inmo-air3", "brand": "INMO", "product": "INMO Air3", "region": "中国", "kind": "page", "enabled": true,
+    "url": "https://www.inmoxr.com/pages/inmo-air3", "updatedAt": "2025-01-01",
+    "featured": [{ "title": "INMO Air3｜官方产品 KV", "url": "https://www.inmoxr.com/pages/inmo-air3", "type": "Official KV / product page", "publishedAt": "2025-01-01" }]
+  },
+  {
+    "id": "rayban-meta", "brand": "Meta × Ray-Ban", "product": "Ray-Ban Meta Gen 2", "region": "海外", "kind": "page", "enabled": true,
+    "url": "https://about.fb.com/news/2025/09/ray-ban-meta-gen-2-better-battery-life-video-capture/", "updatedAt": "2025-09-17",
+    "featured": [{ "title": "Ray-Ban Meta Gen 2｜官方发布视频", "url": "https://about.fb.com/wp-content/uploads/2025/09/Ray-Ban-Meta_Header.mp4", "type": "Official launch video", "publishedAt": "2025-09-17" }]
+  },
+  {
+    "id": "oakley-vanguard", "brand": "Meta × Oakley", "product": "Oakley Meta Vanguard", "region": "海外", "kind": "page", "enabled": true,
+    "url": "https://about.fb.com/news/2025/09/oakley-meta-vanguard-performance-ai-glasses-sports/", "updatedAt": "2025-09-17",
+    "featured": [{ "title": "Oakley Meta Vanguard｜官方发布视频", "url": "https://about.fb.com/fr/wp-content/uploads/sites/12/2025/09/Oakley-Meta-Vanguard-Announcement-Video.mp4", "type": "Official launch video", "publishedAt": "2025-09-17" }]
+  },
+  {
+    "id": "even-g2", "brand": "Even Realities", "product": "Even G2", "region": "海外", "kind": "page", "enabled": true,
+    "url": "https://www.evenrealities.com/en-CA/company", "updatedAt": "2025-11-01",
+    "featured": [{ "title": "Even G2｜官方品牌故事与视频", "url": "https://www.evenrealities.com/en-CA/company", "type": "Official KV / embedded video", "publishedAt": "2025-11-01" }]
+  }
+]
