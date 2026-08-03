@@ -3,9 +3,11 @@ const readStarred = () => {
   try { return new Set(JSON.parse(localStorage.getItem(bookmarkStorageKey) || '[]')); } catch { return new Set(); }
 };
 const pageSize = 32;
-const state = { videos: [], filter: '全部', starred: readStarred(), page: 1 };
+const state = { videos: [], filter: '全部', starred: readStarred(), page: 1, query: '' };
 const grid = document.querySelector('#grid');
 const filters = document.querySelector('#filters');
+const searchInput = document.querySelector('#search');
+const backTop = document.querySelector('#back-top');
 const staticHosting = location.hostname.endsWith('github.io');
 const formatDate = (value) => new Intl.DateTimeFormat('zh-CN', { month: 'short', day: 'numeric', year: 'numeric' }).format(new Date(value));
 const preview = document.querySelector('#preview');
@@ -67,14 +69,19 @@ document.querySelector('#preview .close').addEventListener('click', () => previe
 preview.addEventListener('close', () => { document.querySelector('#player').innerHTML = ''; });
 
 function render() {
-  const visible = state.filter === '全部' ? state.videos
+  let visible = state.filter === '全部' ? state.videos
     : state.filter === '我的星标' ? state.videos.filter((v) => state.starred.has(v.id))
       : state.videos.filter((v) => v.brand === state.filter);
+  if (state.query) {
+    visible = visible.filter((video) => `${video.brand} ${video.product} ${video.title} ${video.description || ''}`.toLowerCase().includes(state.query));
+  }
   const pageCount = Math.ceil(visible.length / pageSize);
   if (state.page > pageCount) state.page = Math.max(1, pageCount);
   const pageVideos = visible.slice((state.page - 1) * pageSize, state.page * pageSize);
   grid.innerHTML = '';
-  document.querySelector('#empty').classList.toggle('hidden', visible.length > 0);
+  const empty = document.querySelector('#empty');
+  empty.classList.toggle('hidden', visible.length > 0);
+  empty.textContent = state.query ? `未找到与「${searchInput.value.trim()}」相关的视频。` : '暂未收集到新素材。请检查来源配置或点击“立即扫描”。';
   pageVideos.forEach((video, index) => {
     const node = document.querySelector('#card').content.cloneNode(true);
     const article = node.querySelector('article');
@@ -135,4 +142,7 @@ document.querySelector('#refresh').addEventListener('click', async (event) => {
     await fetch('/api/refresh', { method: 'POST' }); await load();
   } finally { button.disabled = false; button.innerHTML = '立即扫描 <span>↗</span>'; }
 });
+searchInput.addEventListener('input', (event) => { state.query = event.currentTarget.value.trim().toLowerCase(); state.page = 1; render(); });
+backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+window.addEventListener('scroll', () => backTop.classList.toggle('visible', window.scrollY > 500), { passive: true });
 load();
