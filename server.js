@@ -98,7 +98,7 @@ async function collectYoutubeVideos(source, apiKey, since) {
         id: `${source.id}-yt-${videoId}`, brand: source.brand, product: source.product, region: source.region,
         type: 'Official YouTube video', title: toText(item.snippet?.title || source.product),
         url: `https://www.youtube.com/watch?v=${videoId}`, sourceUrl: `https://www.youtube.com/${source.youtube.handle}`,
-        thumbnail, publishedAt, verified: true
+        thumbnail, description: toText(item.snippet?.description || '').slice(0, 360), publishedAt, verified: true
       });
     }
     const oldest = entries.at(-1)?.contentDetails?.videoPublishedAt || entries.at(-1)?.snippet?.publishedAt;

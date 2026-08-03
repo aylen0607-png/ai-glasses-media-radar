@@ -10,6 +10,23 @@ const formatDate = (value) => new Intl.DateTimeFormat('zh-CN', { month: 'short',
 const preview = document.querySelector('#preview');
 const isPlayable = (url) => /\.(mp4|webm)(\?|$)|youtube\.com\/(?:watch|embed)|youtu\.be\//i.test(url);
 
+function videoIntroduction(video) {
+  if (video.description) return `官方内容围绕「${video.title}」展开：${video.description}`;
+  return `${video.brand} 发布的官方素材，聚焦 ${video.product} 的产品能力、使用场景或发布信息。`;
+}
+
+function marketingTakeaways(video) {
+  const text = `${video.title} ${video.description || ''}`.toLowerCase();
+  const takeaways = [];
+  if (/(camera|capture|photo|video|shoot|record|vlog|live stream)/.test(text)) takeaways.push('用第一视角或真实拍摄成片证明能力；营销物料可优先突出“看见即记录”的即时性。');
+  if (/(translate|translation|teleprompter|notes|meeting|assistant|ai | ai\b|smart)/.test(text)) takeaways.push('把 AI 能力嵌入具体任务，而非抽象讲参数；可复用“痛点—操作—结果”的三段式演示。');
+  if (/(style|design|fashion|wear|frame|color|lightweight|comfort)/.test(text)) takeaways.push('将穿戴感与外观风格作为产品价值的一部分，用人物出街和近景细节降低“科技设备感”。');
+  if (/(launch|introducing|new|unbox|announcement|first look)/.test(text)) takeaways.push('发布期应先建立一个可复述的核心主张，再用功能镜头和场景案例为主张背书。');
+  if (!takeaways.length) takeaways.push('标题与封面已经给出明确场景；二次传播可裁切为“单一场景 + 单一收益”的短内容单元。');
+  takeaways.push('保留真实使用者、环境和操作步骤，能让抽象的智能体验更具可信度与可模仿性。');
+  return [...new Set(takeaways)].slice(0, 2);
+}
+
 function toggleStar(videoId) {
   if (state.starred.has(videoId)) state.starred.delete(videoId);
   else state.starred.add(videoId);
@@ -58,6 +75,17 @@ function render() {
     node.querySelector('time').textContent = formatDate(video.publishedAt);
     node.querySelector('h2').textContent = video.title;
     node.querySelector('.product').textContent = `${video.product} · ${video.region}`;
+    node.querySelector('.video-summary').textContent = videoIntroduction(video);
+    const takeaways = node.querySelector('.takeaways');
+    marketingTakeaways(video).forEach((item) => { const bullet = document.createElement('li'); bullet.textContent = item; takeaways.append(bullet); });
+    const analysisToggle = node.querySelector('.analysis-toggle');
+    const analysisBody = node.querySelector('.analysis-body');
+    analysisToggle.addEventListener('click', () => {
+      const expanded = analysisToggle.getAttribute('aria-expanded') === 'true';
+      analysisToggle.setAttribute('aria-expanded', String(!expanded));
+      analysisToggle.querySelector('span').textContent = expanded ? '+' : '−';
+      analysisBody.classList.toggle('hidden', expanded);
+    });
     const link = node.querySelector('a'); link.href = video.url;
     if (isPlayable(video.url)) {
       article.classList.add('playable');
