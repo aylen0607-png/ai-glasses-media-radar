@@ -97,22 +97,12 @@ function render() {
     node.querySelector('.video-summary').textContent = videoIntroduction(video);
     const takeaways = node.querySelector('.takeaways');
     marketingTakeaways(video).forEach((item) => { const bullet = document.createElement('li'); bullet.textContent = item; takeaways.append(bullet); });
-    const analysisToggle = node.querySelector('.analysis-toggle');
-    const analysisBody = node.querySelector('.analysis-body');
-    analysisToggle.addEventListener('click', () => {
-      const expanded = analysisToggle.getAttribute('aria-expanded') === 'true';
-      analysisToggle.setAttribute('aria-expanded', String(!expanded));
-      analysisToggle.querySelector('span').textContent = expanded ? '+' : '−';
-      analysisBody.classList.toggle('hidden', expanded);
-    });
     const link = node.querySelector('a'); link.href = video.url;
     if (isPlayable(video.url)) {
       article.classList.add('playable');
-      link.textContent = '站内预览';
-      link.href = '#preview';
+      link.classList.add('hidden');
       const open = (event) => { event.preventDefault(); previewVideo(video); };
       node.querySelector('.media').addEventListener('click', open);
-      link.addEventListener('click', open);
     } else {
       node.querySelector('.play').textContent = '↗';
     }
