@@ -1,4 +1,5 @@
 import http from 'node:http';
+import { createHash } from 'node:crypto';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
@@ -10,6 +11,7 @@ const publicDir = path.join(root, 'public');
 const sourcesPath = path.join(dataDir, 'sources.json');
 const videosPath = path.join(dataDir, 'videos.json');
 const port = Number(process.env.PORT || 4173);
+const biliMixinKeyEncTab = [46, 47, 18, 2, 53, 8, 23, 32, 15, 50, 10, 31, 58, 3, 45, 35, 27, 43, 5, 49, 33, 9, 42, 19, 29, 28, 14, 39, 12, 48, 38, 13, 41, 37, 17, 0, 7, 40, 4, 25, 21, 20, 34, 24, 6, 55, 52, 36, 11, 56, 57, 1, 30, 51, 26, 22, 44, 16, 54, 59];
 
 const readJson = async (file, fallback) => {
   try { return JSON.parse(await readFile(file, 'utf8')); } catch { return fallback; }
@@ -57,6 +59,49 @@ function extractRss(xml, source) {
       sourceUrl: source.url, thumbnail: media, publishedAt, verified: true });
   }
   return items;
+}
+
+async function getBiliMixinKey() {
+  const response = await fetch('https://api.bilibili.com/x/web-interface/nav', { headers: { 'user-agent': 'Mozilla/5.0 AI-Glasses-Media-Radar/1.0' }, signal: AbortSignal.timeout(15000) });
+  const data = await response.json();
+  const img = data.data?.wbi_img?.img_url?.split('/').at(-1)?.split('.')[0];
+  const sub = data.data?.wbi_img?.sub_url?.split('/').at(-1)?.split('.')[0];
+  if (!img || !sub) throw new Error('Bilibili WBI signing key unavailable');
+  return biliMixinKeyEncTab.map((index) => `${img}${sub}`[index]).join('').slice(0, 32);
+}
+
+function signBiliParams(params, mixinKey) {
+  const sanitized = Object.fromEntries(Object.entries(params).map(([key, value]) => [key, String(value).replace(/[!'()*]/g, '')]));
+  const query = new URLSearchParams(Object.entries(sanitized).sort(([a], [b]) => a.localeCompare(b))).toString();
+  return `${query}&w_rid=${createHash('md5').update(query + mixinKey).digest('hex')}`;
+}
+
+async function collectBilibiliVideos(source, since, mixinKey) {
+  const videos = [];
+  for (let page = 1; page <= 6; page += 1) {
+    const params = { mid: source.bilibili.mid, pn: page, ps: 50, order: 'pubdate', platform: 'web', web_location: 1550101, wts: Math.floor(Date.now() / 1000) };
+    const url = `https://api.bilibili.com/x/space/wbi/arc/search?${signBiliParams(params, mixinKey)}`;
+    const response = await fetch(url, { headers: { referer: `https://space.bilibili.com/${source.bilibili.mid}`, 'user-agent': 'Mozilla/5.0 AI-Glasses-Media-Radar/1.0' }, signal: AbortSignal.timeout(15000) });
+    const data = await response.json();
+    if (data.code !== 0) throw new Error(`Bilibili API ${data.code}: ${data.message || 'unknown error'}`);
+    const entries = data.data?.list?.vlist || [];
+    for (const entry of entries) {
+      const publishedAt = new Date(entry.created * 1000).toISOString();
+      if (Date.parse(publishedAt) < since) continue;
+      const title = toText(entry.title || source.product);
+      const keywords = source.bilibili.keywords || [];
+      if (keywords.length && !keywords.some((keyword) => `${title} ${entry.description || ''}`.toLowerCase().includes(keyword.toLowerCase()))) continue;
+      videos.push({
+        id: `${source.id}-bili-${entry.bvid}`, brand: source.brand, product: source.product, region: source.region,
+        type: 'Official Bilibili video', title, url: `https://www.bilibili.com/video/${entry.bvid}`,
+        sourceUrl: `https://space.bilibili.com/${source.bilibili.mid}`, thumbnail: entry.pic?.replace(/^http:/, 'https:') || '',
+        description: toText(entry.description || '').slice(0, 360), publishedAt, verified: true
+      });
+    }
+    const oldest = entries.at(-1)?.created;
+    if (!data.data?.page?.pn || !entries.length || (oldest && oldest * 1000 < since)) break;
+  }
+  return videos;
 }
 
 async function youtubeRequest(params, apiKey) {
@@ -112,7 +157,7 @@ async function refresh() {
   const sources = await readJson(sourcesPath, []);
   const existing = await readJson(videosPath, { videos: [] });
   const collected = [];
-  for (const source of sources.filter((item) => item.enabled !== false)) {
+  for (const source of sources.filter((item) => item.enabled !== false && item.kind !== 'bilibili')) {
     try {
       const response = await fetch(source.url, { headers: { 'user-agent': 'AI-Glasses-Media-Radar/1.0' }, signal: AbortSignal.timeout(12000) });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -132,6 +177,16 @@ async function refresh() {
   } else if (sources.some((source) => source.youtube?.handle)) {
     console.warn('YOUTUBE_API_KEY is not set; skipped YouTube API collection.');
   }
+  const biliSources = sources.filter((source) => source.enabled !== false && source.bilibili?.mid);
+  if (biliSources.length) {
+    try {
+      const mixinKey = await getBiliMixinKey();
+      for (const source of biliSources) {
+        try { collected.push(...await collectBilibiliVideos(source, since, mixinKey)); }
+        catch (error) { console.warn(`Bilibili unavailable: ${source.brand}/${source.product}`, error.message); }
+      }
+    } catch (error) { console.warn('Bilibili WBI signing unavailable:', error.message); }
+  }
   const fixed = sources.flatMap((source) => (source.featured || []).map((video, index) => ({
     id: `${source.id}-featured-${index}`, brand: source.brand, product: source.product, region: source.region,
     type: video.type || 'Official launch video', title: video.title, url: video.url, sourceUrl: source.url,
@@ -140,7 +195,7 @@ async function refresh() {
   // Keep the same official URL when it is intentionally tracked for two products
   // (for example, a shared RayNeo launch page covering both V3 and X series).
   const refreshedUrls = new Set(sources.map((source) => source.url));
-  const staleSafe = existing.videos.filter((video) => !refreshedUrls.has(video.sourceUrl) && !sources.some((source) => video.id.startsWith(`${source.id}-yt-`)));
+  const staleSafe = existing.videos.filter((video) => !refreshedUrls.has(video.sourceUrl) && !sources.some((source) => video.id.startsWith(`${source.id}-yt-`) || video.id.startsWith(`${source.id}-bili-`)));
   // Multiple products can subscribe to the same official channel. Keep one card
   // for a shared video, using the earliest configured product as its attribution.
   const byId = new Map([...staleSafe, ...collected, ...fixed].map((video) => [mediaIdentity(video), video]));

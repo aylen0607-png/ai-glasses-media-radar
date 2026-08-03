@@ -59,5 +59,20 @@
     "url": "https://www.evenrealities.com/en-CA/company", "updatedAt": "2025-11-01",
     "youtube": { "handle": "@EvenRealities", "keywords": ["even g2", "even realities"] },
     "featured": [{ "title": "Even G2｜官方品牌故事与视频", "url": "https://www.evenrealities.com/en-CA/company", "type": "Official KV / embedded video", "publishedAt": "2025-11-01" }]
+  },
+  {
+    "id": "rayneo-bilibili", "brand": "雷鸟 RayNeo", "product": "RayNeo 官方 B站", "region": "中国", "kind": "bilibili", "enabled": true,
+    "url": "https://space.bilibili.com/1300352621",
+    "bilibili": { "mid": "1300352621", "keywords": [] }
+  },
+  {
+    "id": "rokid-bilibili", "brand": "Rokid", "product": "Rokid 官方 B站", "region": "中国", "kind": "bilibili", "enabled": true,
+    "url": "https://space.bilibili.com/314358436",
+    "bilibili": { "mid": "314358436", "keywords": [] }
+  },
+  {
+    "id": "inmo-bilibili", "brand": "INMO", "product": "INMO 官方 B站", "region": "中国", "kind": "bilibili", "enabled": true,
+    "url": "https://space.bilibili.com/1467827961",
+    "bilibili": { "mid": "1467827961", "keywords": [] }
   }
 ]
