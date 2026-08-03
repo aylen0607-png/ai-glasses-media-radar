@@ -2,7 +2,8 @@ const bookmarkStorageKey = 'ai-glasses-media-radar:starred';
 const readStarred = () => {
   try { return new Set(JSON.parse(localStorage.getItem(bookmarkStorageKey) || '[]')); } catch { return new Set(); }
 };
-const state = { videos: [], filter: '全部', starred: readStarred() };
+const pageSize = 32;
+const state = { videos: [], filter: '全部', starred: readStarred(), page: 1 };
 const grid = document.querySelector('#grid');
 const filters = document.querySelector('#filters');
 const staticHosting = location.hostname.endsWith('github.io');
@@ -35,6 +36,21 @@ function toggleStar(videoId) {
   render();
 }
 
+function renderPagination(total) {
+  const pagination = document.querySelector('#pagination');
+  const pageCount = Math.ceil(total / pageSize);
+  if (state.page > pageCount) state.page = Math.max(1, pageCount);
+  pagination.classList.toggle('hidden', pageCount <= 1);
+  if (pageCount <= 1) return;
+  const pages = Array.from({ length: pageCount }, (_, index) => index + 1);
+  pagination.innerHTML = `<button data-page="${state.page - 1}" ${state.page === 1 ? 'disabled' : ''}>上一页</button>${pages.map((page) => `<button data-page="${page}" class="${page === state.page ? 'active' : ''}" aria-current="${page === state.page ? 'page' : 'false'}">${page}</button>`).join('')}<button data-page="${state.page + 1}" ${state.page === pageCount ? 'disabled' : ''}>下一页</button>`;
+  pagination.querySelectorAll('button[data-page]').forEach((button) => button.addEventListener('click', () => {
+    state.page = Number(button.dataset.page);
+    render();
+    document.querySelector('.controls').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }));
+}
+
 function previewVideo(video) {
   if (!isPlayable(video.url)) { window.open(video.url, '_blank', 'noopener,noreferrer'); return; }
   const player = document.querySelector('#player');
@@ -54,9 +70,12 @@ function render() {
   const visible = state.filter === '全部' ? state.videos
     : state.filter === '我的星标' ? state.videos.filter((v) => state.starred.has(v.id))
       : state.videos.filter((v) => v.brand === state.filter);
+  const pageCount = Math.ceil(visible.length / pageSize);
+  if (state.page > pageCount) state.page = Math.max(1, pageCount);
+  const pageVideos = visible.slice((state.page - 1) * pageSize, state.page * pageSize);
   grid.innerHTML = '';
   document.querySelector('#empty').classList.toggle('hidden', visible.length > 0);
-  visible.forEach((video, index) => {
+  pageVideos.forEach((video, index) => {
     const node = document.querySelector('#card').content.cloneNode(true);
     const article = node.querySelector('article');
     article.style.setProperty('--i', index);
@@ -101,6 +120,7 @@ function render() {
   });
   document.querySelector('#total').textContent = state.videos.length;
   document.querySelector('#brands').textContent = new Set(state.videos.map((v) => v.brand)).size;
+  renderPagination(visible.length);
 }
 
 function renderFilters() {
@@ -109,7 +129,7 @@ function renderFilters() {
     const label = name === '我的星标' ? `我的星标 <span>${state.starred.size}</span>` : name;
     return `<button class="${state.filter === name ? 'active' : ''}" data-filter="${name}">${label}</button>`;
   }).join('');
-  filters.querySelectorAll('button').forEach((button) => button.addEventListener('click', () => { state.filter = button.dataset.filter; renderFilters(); render(); }));
+  filters.querySelectorAll('button').forEach((button) => button.addEventListener('click', () => { state.filter = button.dataset.filter; state.page = 1; renderFilters(); render(); }));
 }
 
 async function load() {
