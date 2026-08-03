@@ -152,7 +152,7 @@ async function refresh() {
 
 function nextDailyDelay() {
   const now = new Date(); const target = new Date();
-  target.setHours(8, 30, 0, 0);
+  target.setHours(10, 0, 0, 0);
   if (target <= now) target.setDate(target.getDate() + 1);
   return target - now;
 }

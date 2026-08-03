@@ -2,8 +2,8 @@ name: Refresh AI glasses media
 
 on:
   schedule:
-    # 08:30 Asia/Shanghai (UTC+8). GitHub may delay scheduled runs during heavy load.
-    - cron: '30 0 * * *'
+    # 10:00 Asia/Shanghai (UTC+8). GitHub may delay scheduled runs during heavy load.
+    - cron: '0 2 * * *'
   workflow_dispatch:
 
 permissions:

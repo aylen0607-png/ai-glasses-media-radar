@@ -1,6 +1,6 @@
 # AI 眼镜每日追踪
 
-收集已配置品牌的公开官方视频、产品主视觉（KV）与发布页。首页按品牌筛选，每天北京时间 08:30 自动刷新一次；点击“立即扫描”可触发即时更新。
+收集已配置品牌的公开官方视频、产品主视觉（KV）与发布页。首页按品牌筛选，每天北京时间 10:00 自动刷新一次。
 
 ## 启动
 
@@ -14,17 +14,17 @@ node server.js
 
 ## 可靠的每日同步（推荐部署方式）
 
-若部署在云服务器或 NAS，请用 cron 在每天 08:30 执行一次：
+若部署在云服务器或 NAS，请用 cron 在每天 10:00 执行一次：
 
 ```cron
-30 8 * * * cd /path/to/ai眼镜 && /usr/bin/node server.js --refresh
+0 10 * * * cd /path/to/ai眼镜 && /usr/bin/node server.js --refresh
 ```
 
 将时区设为 `Asia/Shanghai`。生产环境可以另用 PM2、systemd 或 Docker 保持 `node server.js` 常驻，以提供网页访问。
 
 ## GitHub Pages
 
-仓库已包含两条 GitHub Actions：`Deploy GitHub Pages` 在每次推送后生成并发布静态站点；`Refresh AI glasses media` 每天 08:30（北京时间）刷新 `data/videos.json`、自动提交，并触发重新发布。GitHub Pages 上不能使用“立即扫描”，但会显示已同步的数据。
+仓库已包含两条 GitHub Actions：`Deploy GitHub Pages` 在每次推送后生成并发布静态站点；`Refresh AI glasses media` 每天 10:00（北京时间）刷新 `data/videos.json`、自动提交，并触发重新发布。
 
 ## 管理追踪来源
 
