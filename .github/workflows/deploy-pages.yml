@@ -28,6 +28,8 @@ jobs:
           cp -R public/. _site/
           cp data/videos.json _site/data/videos.json
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
