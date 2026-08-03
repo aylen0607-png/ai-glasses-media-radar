@@ -132,16 +132,8 @@ function renderFilters() {
 async function load() {
   const response = await fetch(staticHosting ? './data/videos.json' : '/api/videos'); const data = await response.json();
   state.videos = data.videos || [];
-  document.querySelector('#updated').textContent = data.updatedAt ? `上次同步：${new Date(data.updatedAt).toLocaleString('zh-CN', { hour12: false })}` : '等待首次同步';
   document.querySelector('#loading').classList.add('hidden'); renderFilters(); render();
 }
-document.querySelector('#refresh').addEventListener('click', async (event) => {
-  const button = event.currentTarget; button.disabled = true; button.innerHTML = '扫描中…';
-  try {
-    if (staticHosting) { button.innerHTML = '每天 08:30 自动更新'; return; }
-    await fetch('/api/refresh', { method: 'POST' }); await load();
-  } finally { button.disabled = false; button.innerHTML = '立即扫描 <span>↗</span>'; }
-});
 searchInput.addEventListener('input', (event) => { state.query = event.currentTarget.value.trim().toLowerCase(); state.page = 1; render(); });
 backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 window.addEventListener('scroll', () => backTop.classList.toggle('visible', window.scrollY > 500), { passive: true });
