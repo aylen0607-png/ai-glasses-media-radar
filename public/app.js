@@ -1,10 +1,22 @@
-const state = { videos: [], filter: '全部' };
+const bookmarkStorageKey = 'ai-glasses-media-radar:starred';
+const readStarred = () => {
+  try { return new Set(JSON.parse(localStorage.getItem(bookmarkStorageKey) || '[]')); } catch { return new Set(); }
+};
+const state = { videos: [], filter: '全部', starred: readStarred() };
 const grid = document.querySelector('#grid');
 const filters = document.querySelector('#filters');
 const staticHosting = location.hostname.endsWith('github.io');
 const formatDate = (value) => new Intl.DateTimeFormat('zh-CN', { month: 'short', day: 'numeric', year: 'numeric' }).format(new Date(value));
 const preview = document.querySelector('#preview');
 const isPlayable = (url) => /\.(mp4|webm)(\?|$)|youtube\.com\/(?:watch|embed)|youtu\.be\//i.test(url);
+
+function toggleStar(videoId) {
+  if (state.starred.has(videoId)) state.starred.delete(videoId);
+  else state.starred.add(videoId);
+  localStorage.setItem(bookmarkStorageKey, JSON.stringify([...state.starred]));
+  renderFilters();
+  render();
+}
 
 function previewVideo(video) {
   if (!isPlayable(video.url)) { window.open(video.url, '_blank', 'noopener,noreferrer'); return; }
@@ -22,7 +34,9 @@ document.querySelector('#preview .close').addEventListener('click', () => previe
 preview.addEventListener('close', () => { document.querySelector('#player').innerHTML = ''; });
 
 function render() {
-  const visible = state.filter === '全部' ? state.videos : state.videos.filter((v) => v.brand === state.filter);
+  const visible = state.filter === '全部' ? state.videos
+    : state.filter === '我的星标' ? state.videos.filter((v) => state.starred.has(v.id))
+      : state.videos.filter((v) => v.brand === state.filter);
   grid.innerHTML = '';
   document.querySelector('#empty').classList.toggle('hidden', visible.length > 0);
   visible.forEach((video, index) => {
@@ -30,6 +44,13 @@ function render() {
     const article = node.querySelector('article');
     article.style.setProperty('--i', index);
     const media = node.querySelector('.media');
+    const star = node.querySelector('.star');
+    const starred = state.starred.has(video.id);
+    star.classList.toggle('active', starred);
+    star.setAttribute('aria-pressed', String(starred));
+    star.setAttribute('aria-label', starred ? '取消星标' : '加入星标');
+    star.textContent = starred ? '★' : '☆';
+    star.addEventListener('click', (event) => { event.preventDefault(); event.stopPropagation(); toggleStar(video.id); });
     if (video.thumbnail) media.style.backgroundImage = `linear-gradient(180deg,transparent 45%,rgba(5,8,16,.82)),url("${video.thumbnail}")`;
     else media.classList.add(`tone-${index % 5}`);
     node.querySelector('.kind').textContent = video.type.replace('Official ', '').replace(' / ', ' · ');
@@ -55,8 +76,11 @@ function render() {
 }
 
 function renderFilters() {
-  const names = ['全部', ...new Set(state.videos.map((v) => v.brand))];
-  filters.innerHTML = names.map((name) => `<button class="${state.filter === name ? 'active' : ''}" data-filter="${name}">${name}</button>`).join('');
+  const names = ['全部', '我的星标', ...new Set(state.videos.map((v) => v.brand))];
+  filters.innerHTML = names.map((name) => {
+    const label = name === '我的星标' ? `我的星标 <span>${state.starred.size}</span>` : name;
+    return `<button class="${state.filter === name ? 'active' : ''}" data-filter="${name}">${label}</button>`;
+  }).join('');
   filters.querySelectorAll('button').forEach((button) => button.addEventListener('click', () => { state.filter = button.dataset.filter; renderFilters(); render(); }));
 }
 
