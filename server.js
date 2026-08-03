@@ -28,6 +28,12 @@ const absoluteUrl = (candidate, base) => {
 
 function extractMedia(html, source) {
   const found = [];
+  const dateMatch = html.match(/<meta[^>]+(?:property|name)=["']article:published_time["'][^>]+content=["']([^"']+)/i)
+    || html.match(/<meta[^>]+content=["']([^"']+)[^>]+(?:property|name)=["']article:published_time["']/i)
+    || html.match(/["']datePublished["']\s*:\s*["']([^"']+)/i);
+  const pagePublishedAt = dateMatch?.[1] && !Number.isNaN(Date.parse(dateMatch[1]))
+    ? new Date(dateMatch[1]).toISOString()
+    : source.updatedAt || new Date().toISOString();
   const add = (url, title = source.product, type = 'Official video') => {
     const href = absoluteUrl(url, source.url);
     if (!href || !/\.(mp4|webm)(\?|$)|youtube\.com\/embed|youtu\.be\//i.test(href)) return;
@@ -35,7 +41,7 @@ function extractMedia(html, source) {
       id: `${source.id}-${found.length}-${Buffer.from(href).toString('base64url').slice(0, 9)}`,
       brand: source.brand, product: source.product, region: source.region,
       type, title: toText(title).slice(0, 110) || source.product,
-      url: href, sourceUrl: source.url, publishedAt: new Date().toISOString(),
+      url: href, sourceUrl: source.url, publishedAt: pagePublishedAt,
       thumbnail: source.thumbnail || '', verified: true
     });
   };
