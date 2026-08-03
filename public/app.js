@@ -7,6 +7,7 @@ const state = { videos: [], filter: '全部', starred: readStarred(), page: 1, q
 const grid = document.querySelector('#grid');
 const filters = document.querySelector('#filters');
 const searchInput = document.querySelector('#search');
+const searchForm = document.querySelector('#search-form');
 const backTop = document.querySelector('#back-top');
 const staticHosting = location.hostname.endsWith('github.io');
 const formatDate = (value) => new Intl.DateTimeFormat('zh-CN', { month: 'short', day: 'numeric', year: 'numeric' }).format(new Date(value));
@@ -134,7 +135,13 @@ async function load() {
   state.videos = data.videos || [];
   document.querySelector('#loading').classList.add('hidden'); renderFilters(); render();
 }
-searchInput.addEventListener('input', (event) => { state.query = event.currentTarget.value.trim().toLowerCase(); state.page = 1; render(); });
+searchForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  state.query = searchInput.value.trim().toLowerCase();
+  state.page = 1;
+  render();
+  document.querySelector('#grid').scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
 backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 window.addEventListener('scroll', () => backTop.classList.toggle('visible', window.scrollY > 500), { passive: true });
 load();
