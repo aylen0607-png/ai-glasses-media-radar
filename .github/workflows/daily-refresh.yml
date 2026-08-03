@@ -18,6 +18,8 @@ jobs:
         with:
           node-version: 20
       - name: Refresh public official media sources
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: node server.js --refresh
       - name: Commit refreshed media index
         run: |

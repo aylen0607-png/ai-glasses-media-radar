@@ -55,6 +55,55 @@ function extractRss(xml, source) {
   return items;
 }
 
+async function youtubeRequest(params, apiKey) {
+  const url = new URL('https://www.googleapis.com/youtube/v3/' + params.resource);
+  Object.entries(params).forEach(([key, value]) => {
+    if (key !== 'resource' && value !== undefined && value !== null) url.searchParams.set(key, value);
+  });
+  url.searchParams.set('key', apiKey);
+  const response = await fetch(url, { signal: AbortSignal.timeout(15000) });
+  if (!response.ok) throw new Error(`YouTube API HTTP ${response.status}: ${(await response.text()).slice(0, 180)}`);
+  return response.json();
+}
+
+function youtubeMatchesSource(item, source) {
+  const keywords = source.youtube?.keywords || [];
+  if (!keywords.length) return true;
+  const text = `${item.snippet?.title || ''} ${item.snippet?.description || ''}`.toLowerCase();
+  return keywords.some((keyword) => text.includes(keyword.toLowerCase()));
+}
+
+async function collectYoutubeVideos(source, apiKey, since) {
+  if (!source.youtube?.handle) return [];
+  const channelData = await youtubeRequest({ resource: 'channels', part: 'contentDetails', forHandle: source.youtube.handle }, apiKey);
+  const uploads = channelData.items?.[0]?.contentDetails?.relatedPlaylists?.uploads;
+  if (!uploads) throw new Error(`Official channel not found: ${source.youtube.handle}`);
+
+  const videos = [];
+  let pageToken;
+  for (let page = 0; page < 6; page += 1) {
+    const feed = await youtubeRequest({ resource: 'playlistItems', part: 'snippet,contentDetails', playlistId: uploads, maxResults: 50, pageToken }, apiKey);
+    const entries = feed.items || [];
+    for (const item of entries) {
+      const publishedAt = item.contentDetails?.videoPublishedAt || item.snippet?.publishedAt;
+      if (!publishedAt || Date.parse(publishedAt) < since) continue;
+      if (!item.contentDetails?.videoId || !youtubeMatchesSource(item, source)) continue;
+      const videoId = item.contentDetails.videoId;
+      const thumbnail = item.snippet?.thumbnails?.maxres?.url || item.snippet?.thumbnails?.high?.url || item.snippet?.thumbnails?.medium?.url || '';
+      videos.push({
+        id: `${source.id}-yt-${videoId}`, brand: source.brand, product: source.product, region: source.region,
+        type: 'Official YouTube video', title: toText(item.snippet?.title || source.product),
+        url: `https://www.youtube.com/watch?v=${videoId}`, sourceUrl: `https://www.youtube.com/${source.youtube.handle}`,
+        thumbnail, publishedAt, verified: true
+      });
+    }
+    const oldest = entries.at(-1)?.contentDetails?.videoPublishedAt || entries.at(-1)?.snippet?.publishedAt;
+    if (!feed.nextPageToken || (oldest && Date.parse(oldest) < since)) break;
+    pageToken = feed.nextPageToken;
+  }
+  return videos;
+}
+
 async function refresh() {
   const sources = await readJson(sourcesPath, []);
   const existing = await readJson(videosPath, { videos: [] });
@@ -69,6 +118,16 @@ async function refresh() {
       console.warn(`Source unavailable: ${source.brand}/${source.product}`, error.message);
     }
   }
+  const apiKey = process.env.YOUTUBE_API_KEY;
+  const since = Date.now() - 365 * 24 * 60 * 60 * 1000;
+  if (apiKey) {
+    for (const source of sources.filter((item) => item.enabled !== false && item.youtube?.handle)) {
+      try { collected.push(...await collectYoutubeVideos(source, apiKey, since)); }
+      catch (error) { console.warn(`YouTube unavailable: ${source.brand}/${source.product}`, error.message); }
+    }
+  } else if (sources.some((source) => source.youtube?.handle)) {
+    console.warn('YOUTUBE_API_KEY is not set; skipped YouTube API collection.');
+  }
   const fixed = sources.flatMap((source) => (source.featured || []).map((video, index) => ({
     id: `${source.id}-featured-${index}`, brand: source.brand, product: source.product, region: source.region,
     type: video.type || 'Official launch video', title: video.title, url: video.url, sourceUrl: source.url,
@@ -77,7 +136,7 @@ async function refresh() {
   // Keep the same official URL when it is intentionally tracked for two products
   // (for example, a shared RayNeo launch page covering both V3 and X series).
   const refreshedUrls = new Set(sources.map((source) => source.url));
-  const staleSafe = existing.videos.filter((video) => !refreshedUrls.has(video.sourceUrl));
+  const staleSafe = existing.videos.filter((video) => !refreshedUrls.has(video.sourceUrl) && !sources.some((source) => video.id.startsWith(`${source.id}-yt-`)));
   const byId = new Map([...staleSafe, ...collected, ...fixed].map((video) => [video.id, video]));
   const videos = [...byId.values()].sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt)).slice(0, 250);
   await mkdir(dataDir, { recursive: true });
