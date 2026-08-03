@@ -81,7 +81,7 @@ function render() {
   grid.innerHTML = '';
   const empty = document.querySelector('#empty');
   empty.classList.toggle('hidden', visible.length > 0);
-  empty.textContent = state.query ? `未找到与「${searchInput.value.trim()}」相关的视频。` : '暂未收集到新素材。请检查来源配置或点击“立即扫描”。';
+  empty.textContent = state.query ? `未找到与「${searchInput.value.trim()}」相关的视频。` : '暂未收集到新素材，请稍后再查看。';
   pageVideos.forEach((video, index) => {
     const node = document.querySelector('#card').content.cloneNode(true);
     const article = node.querySelector('article');
