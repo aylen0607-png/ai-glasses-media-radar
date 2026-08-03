@@ -61,18 +61,8 @@
     "featured": [{ "title": "Even G2｜官方品牌故事与视频", "url": "https://www.evenrealities.com/en-CA/company", "type": "Official KV / embedded video", "publishedAt": "2025-11-01" }]
   },
   {
-    "id": "rayneo-bilibili", "brand": "雷鸟 RayNeo", "product": "RayNeo 官方 B站", "region": "中国", "kind": "bilibili", "enabled": true,
-    "url": "https://space.bilibili.com/1300352621",
-    "bilibili": { "mid": "1300352621", "keywords": [] }
-  },
-  {
-    "id": "rokid-bilibili", "brand": "Rokid", "product": "Rokid 官方 B站", "region": "中国", "kind": "bilibili", "enabled": true,
-    "url": "https://space.bilibili.com/314358436",
-    "bilibili": { "mid": "314358436", "keywords": [] }
-  },
-  {
-    "id": "inmo-bilibili", "brand": "INMO", "product": "INMO 官方 B站", "region": "中国", "kind": "bilibili", "enabled": true,
-    "url": "https://space.bilibili.com/1467827961",
-    "bilibili": { "mid": "1467827961", "keywords": [] }
+    "id": "samsung-intelligent-eyewear", "brand": "三星 Samsung", "product": "Samsung Intelligent Eyewear", "region": "海外", "kind": "page", "enabled": true,
+    "url": "https://news.samsung.com/uk/samsung-brings-galaxy-ecosystem-into-everyday-eyewear", "updatedAt": "2026-07-22",
+    "featured": [{ "title": "Samsung Intelligent Eyewear｜Samsung × Google 智能眼镜首次展示", "url": "https://news.samsung.com/uk/samsung-brings-galaxy-ecosystem-into-everyday-eyewear", "type": "Official launch page / KV", "publishedAt": "2026-07-22" }]
   }
 ]

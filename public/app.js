@@ -11,7 +11,7 @@ const backTop = document.querySelector('#back-top');
 const staticHosting = location.hostname.endsWith('github.io');
 const formatDate = (value) => new Intl.DateTimeFormat('zh-CN', { month: 'short', day: 'numeric', year: 'numeric' }).format(new Date(value));
 const preview = document.querySelector('#preview');
-const isPlayable = (url) => /\.(mp4|webm)(\?|$)|youtube\.com\/(?:watch|embed)|youtu\.be\/|bilibili\.com\/video\/BV/i.test(url);
+const isPlayable = (url) => /\.(mp4|webm)(\?|$)|youtube\.com\/(?:watch|embed)|youtu\.be\//i.test(url);
 
 function videoIntroduction(video) {
   if (video.description) return `官方内容围绕「${video.title}」展开：${video.description}`;
@@ -57,12 +57,9 @@ function previewVideo(video) {
   if (!isPlayable(video.url)) { window.open(video.url, '_blank', 'noopener,noreferrer'); return; }
   const player = document.querySelector('#player');
   const youtube = video.url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([^?&/]+)/i)?.[1];
-  const bilibili = video.url.match(/bilibili\.com\/video\/(BV[a-zA-Z0-9]+)/i)?.[1];
   player.innerHTML = youtube
     ? `<iframe src="https://www.youtube.com/embed/${youtube}?autoplay=1" title="${video.title}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`
-    : bilibili
-      ? `<iframe src="https://player.bilibili.com/player.html?bvid=${bilibili}&autoplay=1" title="${video.title}" allow="autoplay; fullscreen" allowfullscreen></iframe>`
-      : `<video src="${video.url}" controls autoplay playsinline></video>`;
+    : `<video src="${video.url}" controls autoplay playsinline></video>`;
   document.querySelector('#preview-brand').textContent = `${video.brand} · ${video.product}`;
   document.querySelector('#preview-title').textContent = video.title;
   document.querySelector('#preview-source').href = video.sourceUrl || video.url;
