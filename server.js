@@ -16,6 +16,10 @@ const readJson = async (file, fallback) => {
 };
 
 const toText = (value = '') => value.replace(/<[^>]*>/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+const mediaIdentity = (video) => {
+  const youtubeId = video.url?.match(/[?&]v=([^&]+)|youtu\.be\/([^?&/]+)|youtube\.com\/embed\/([^?&/]+)/i);
+  return youtubeId ? `youtube:${youtubeId[1] || youtubeId[2] || youtubeId[3]}` : `url:${video.url}`;
+};
 const absoluteUrl = (candidate, base) => {
   const cleaned = candidate.replaceAll('\\u0026', '&');
   const external = /^(?:www\.)?(?:youtube\.com|youtu\.be)\//i.test(cleaned) ? `https://${cleaned}` : cleaned;
@@ -137,7 +141,9 @@ async function refresh() {
   // (for example, a shared RayNeo launch page covering both V3 and X series).
   const refreshedUrls = new Set(sources.map((source) => source.url));
   const staleSafe = existing.videos.filter((video) => !refreshedUrls.has(video.sourceUrl) && !sources.some((source) => video.id.startsWith(`${source.id}-yt-`)));
-  const byId = new Map([...staleSafe, ...collected, ...fixed].map((video) => [video.id, video]));
+  // Multiple products can subscribe to the same official channel. Keep one card
+  // for a shared video, using the earliest configured product as its attribution.
+  const byId = new Map([...staleSafe, ...collected, ...fixed].map((video) => [mediaIdentity(video), video]));
   const videos = [...byId.values()].sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt)).slice(0, 250);
   await mkdir(dataDir, { recursive: true });
   await writeFile(videosPath, JSON.stringify({ updatedAt: new Date().toISOString(), videos }, null, 2));
