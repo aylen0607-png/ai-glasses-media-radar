@@ -129,7 +129,9 @@ async function refresh() {
     }
   }
   const apiKey = process.env.YOUTUBE_API_KEY;
-  const since = Date.now() - 365 * 24 * 60 * 60 * 1000;
+  // Retain the full prior calendar year plus the current year, rather than a
+  // rolling 365-day window, so January–August releases from last year remain visible.
+  const since = Date.UTC(new Date().getUTCFullYear() - 1, 0, 1);
   if (apiKey) {
     for (const source of sources.filter((item) => item.enabled !== false && item.youtube?.handle)) {
       try { collected.push(...await collectYoutubeVideos(source, apiKey, since)); }
