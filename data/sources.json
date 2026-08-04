@@ -24,7 +24,10 @@
     "id": "rokid-glasses", "brand": "Rokid", "product": "Rokid Glasses", "region": "中国 / 全球", "kind": "page", "enabled": true,
     "url": "https://global.rokid.com/products/rokid-glasses", "updatedAt": "2026-07-10",
     "youtube": { "handle": "@rokidglobal", "keywords": ["rokid glasses", "rokid ai glasses"] },
-    "featured": [{ "title": "Rokid Glasses｜官方产品 KV", "url": "https://global.rokid.com/products/rokid-glasses", "type": "Official KV / product page", "publishedAt": "2026-07-10" }]
+    "featured": [
+      { "title": "Rokid Glasses｜官方产品 KV", "url": "https://global.rokid.com/products/rokid-glasses", "type": "Official KV / product page", "publishedAt": "2026-07-10" },
+      { "title": "🚀 Meet the Future of Wearable AI — Rokid Glasses", "url": "https://www.youtube.com/watch?v=UY2DTpaxvHs", "type": "Official YouTube video", "publishedAt": "2025-07-20", "thumbnail": "https://i.ytimg.com/vi/UY2DTpaxvHs/hqdefault.jpg" }
+    ]
   },
   {
     "id": "rokid-video", "brand": "Rokid", "product": "Rokid Glasses / Style", "region": "中国 / 全球", "kind": "page", "enabled": true,
