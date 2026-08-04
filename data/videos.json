@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T02:58:52.629Z",
+  "updatedAt": "2026-08-04T03:09:27.299Z",
   "videos": [
     {
       "id": "rokid-video-yt-IfTNNywOfsg",
@@ -2785,6 +2785,19 @@
       "thumbnail": "https://i.ytimg.com/vi/Y8JPqYFg-H8/maxresdefault.jpg",
       "description": "Learn more about Rokid Glasses: http://bit.ly/4mmRgSM Rokid glasses are the world's lightest, full-featured AI and AR glasses. They incorporate AI functionality and display into ordinary glasses, offering an unparalleled product with ultra-light and stylish design. Features like photo and video recording, real-time translation in nearly all languages, and a ",
       "publishedAt": "2025-08-13T09:24:24Z",
+      "verified": true
+    },
+    {
+      "id": "rokid-glasses-featured-1",
+      "brand": "Rokid",
+      "product": "Rokid Glasses",
+      "region": "中国 / 全球",
+      "type": "Official YouTube video",
+      "title": "🚀 Meet the Future of Wearable AI — Rokid Glasses",
+      "url": "https://www.youtube.com/watch?v=UY2DTpaxvHs",
+      "sourceUrl": "https://global.rokid.com/products/rokid-glasses",
+      "thumbnail": "https://i.ytimg.com/vi/UY2DTpaxvHs/hqdefault.jpg",
+      "publishedAt": "2025-07-20",
       "verified": true
     },
     {
