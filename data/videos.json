@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-08-04T03:19:09.606Z",
+  "updatedAt": "2026-08-04T11:11:08.643Z",
   "videos": [
+    {
+      "id": "rokid-video-yt-qRzJIwziVSo",
+      "brand": "Rokid",
+      "product": "Rokid Glasses / Style",
+      "region": "中国 / 全球",
+      "type": "Official YouTube video",
+      "title": "Rokid Glasses Canada Launch Event",
+      "url": "https://www.youtube.com/watch?v=qRzJIwziVSo",
+      "sourceUrl": "https://www.youtube.com/@rokidglobal",
+      "thumbnail": "https://i.ytimg.com/vi/qRzJIwziVSo/maxresdefault.jpg",
+      "description": "On July 29, 2026, Rokid hosted the Rokid Canada Launch Event under the theme “Future in Sight.” The event brought together guests, partners, media, and members of the local community to discover Rokid Glasses through product presentations and hands-on demonstrations. From the launch presentation to real reactions from guests trying Rokid Glasses, this video ",
+      "publishedAt": "2026-08-04T05:34:16Z",
+      "verified": true
+    },
     {
       "id": "rokid-video-yt-IfTNNywOfsg",
       "brand": "Rokid",
@@ -3007,6 +3021,19 @@
       "thumbnail": "https://i.ytimg.com/vi/gRehxkZGTik/maxresdefault.jpg",
       "description": "Think you’re using your Ray-Ban Meta glasses to their full potential? Think again! In this video, tech YouTuber @HaylsWorld breaks down the five most common mistakes people make when using these AI glasses—and the game-changing features you might be missing out on. From making calls and sending texts hands-free, to Meta AI tricks, built-in audio controls, an",
       "publishedAt": "2025-03-18T20:40:06Z",
+      "verified": true
+    },
+    {
+      "id": "rayneo-x-0-aHR0cHM6L",
+      "brand": "雷鸟 RayNeo",
+      "product": "RayNeo X 系列",
+      "region": "中国",
+      "type": "Official video",
+      "title": "RayNeo X 系列",
+      "url": "https://www.rayneo.com/cdn/shop/videos/c/vp/0eaaa80c28c24054a6f0151c717a00be/0eaaa80c28c24054a6f0151c717a00be.HD-1080p-2.5Mbps-90086543.mp4?v=0",
+      "sourceUrl": "https://www.rayneo.com/blogs/news/from-real-reviews-by-xpert-rayneo-reveals-the-latest-xr-glasses-rayneo-air-3s-on-the-mwc-2025-a-sound-miracle-eye-friendly-and-immersive",
+      "publishedAt": "2025-03-18T06:49:52.000Z",
+      "thumbnail": "",
       "verified": true
     },
     {
