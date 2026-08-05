@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-08-04T11:11:08.643Z",
+  "updatedAt": "2026-08-05T11:05:40.034Z",
   "videos": [
+    {
+      "id": "even-g2-yt-7bopFRloI3s",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Start Your Day with Even G2 Smart Glasses",
+      "url": "https://www.youtube.com/watch?v=7bopFRloI3s",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/7bopFRloI3s/maxresdefault.jpg",
+      "description": "Take Even G2 out of the case and into your day. Charged, ready, and designed to fit naturally into your routine, Even G2 keeps useful information in view while helping you stay focused on what’s around you. Learn more: https://evenrealities.bio/ytb",
+      "publishedAt": "2026-08-04T11:18:13Z",
+      "verified": true
+    },
     {
       "id": "rokid-video-yt-qRzJIwziVSo",
       "brand": "Rokid",
