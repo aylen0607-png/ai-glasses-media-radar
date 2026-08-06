@@ -131,7 +131,11 @@ function renderFilters() {
 }
 
 async function load() {
-  const response = await fetch(staticHosting ? './data/videos.json' : '/api/videos'); const data = await response.json();
+  const response = await fetch(
+    staticHosting ? `./data/videos.json?v=${Date.now()}` : '/api/videos',
+    { cache: 'no-store' }
+  );
+  const data = await response.json();
   state.videos = data.videos || [];
   document.querySelector('#loading').classList.add('hidden'); renderFilters(); render();
 }
