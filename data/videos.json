@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-08-06T06:38:53.417Z",
+  "updatedAt": "2026-08-06T11:07:40.454Z",
   "videos": [
+    {
+      "id": "rokid-video-yt-XeKGUQcCgRU",
+      "brand": "Rokid",
+      "product": "Rokid Glasses / Style",
+      "region": "中国 / 全球",
+      "type": "Official YouTube video",
+      "title": "What’s a Day on Duty Like for a U.S. Police Officer? | Rokid Glasses POV #rokid #rokidglasses",
+      "url": "https://www.youtube.com/watch?v=XeKGUQcCgRU",
+      "sourceUrl": "https://www.youtube.com/@rokidglobal",
+      "thumbnail": "https://i.ytimg.com/vi/XeKGUQcCgRU/maxresdefault.jpg",
+      "description": "From gearing up and heading out on patrol to responding to urgent calls, working a case, finishing the paperwork, and finally heading home—here’s a first-person look at the day.",
+      "publishedAt": "2026-08-06T10:37:20Z",
+      "verified": true
+    },
     {
       "id": "rokid-video-yt-lXwbuUAkvDA",
       "brand": "Rokid",
@@ -3465,19 +3479,6 @@
       "thumbnail": "https://i.ytimg.com/vi/gZ9IsB72nVk/maxresdefault.jpg",
       "description": "Subscribe to Ray-Ban Meta Youtube Channel for more tips 👉https://www.youtube.com/@raybanmeta?sub_confirmation=1 Imagine this: you put on what looks like a normal pair of glasses… but they give you real-time information, translate conversations live, help you remember where you parked your car, and more. All this at your fingertips! In this live demo from Co",
       "publishedAt": "2025-09-18T05:53:52Z",
-      "verified": true
-    },
-    {
-      "id": "oakley-vanguard-0-aHR0cHM6L",
-      "brand": "Meta × Oakley",
-      "product": "Oakley Meta Vanguard",
-      "region": "海外",
-      "type": "Official video",
-      "title": "Oakley Meta Vanguard",
-      "url": "https://about.fb.com/wp-content/uploads/2025/09/Oakley-Meta-Vanguard_Header.mp4?_=1",
-      "sourceUrl": "https://about.fb.com/news/2025/09/oakley-meta-vanguard-performance-ai-glasses-sports/",
-      "publishedAt": "2025-09-18T00:14:06.000Z",
-      "thumbnail": "",
       "verified": true
     }
   ]
