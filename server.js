@@ -91,7 +91,9 @@ async function collectYoutubeVideos(source, apiKey, since) {
 
   const videos = [];
   let pageToken;
-  for (let page = 0; page < 6; page += 1) {
+  // Continue until the channel reaches the requested date range.  A fixed page
+  // cap silently drops older, still-in-range releases on active channels.
+  while (true) {
     const feed = await youtubeRequest({ resource: 'playlistItems', part: 'snippet,contentDetails', playlistId: uploads, maxResults: 50, pageToken }, apiKey);
     const entries = feed.items || [];
     for (const item of entries) {
@@ -152,7 +154,9 @@ async function refresh() {
   // Multiple products can subscribe to the same official channel. Keep one card
   // for a shared video, using the earliest configured product as its attribution.
   const byId = new Map([...staleSafe, ...collected, ...fixed].map((video) => [mediaIdentity(video), video]));
-  const videos = [...byId.values()].sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt)).slice(0, 250);
+  const videos = [...byId.values()]
+    .filter((video) => !video.publishedAt || Date.parse(video.publishedAt) >= since)
+    .sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
   await mkdir(dataDir, { recursive: true });
   await writeFile(videosPath, JSON.stringify({ updatedAt: new Date().toISOString(), videos }, null, 2));
   return { updatedAt: new Date().toISOString(), count: videos.length, collected: collected.length };
