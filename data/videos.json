@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-08-12T07:52:10.629Z",
+  "updatedAt": "2026-08-13T07:02:09.234Z",
   "videos": [
+    {
+      "id": "even-g2-yt-ccGdJ2jPtl8",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Ever wonder what happens after hours?",
+      "url": "https://www.youtube.com/watch?v=ccGdJ2jPtl8",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/ccGdJ2jPtl8/maxresdefault.jpg",
+      "description": "Conversate, available on Even G2. Learn more: https://evenrealities.bio/ytb",
+      "publishedAt": "2026-08-12T12:14:02Z",
+      "verified": true
+    },
     {
       "id": "even-g2-yt-vSKsC9ASkbg",
       "brand": "Even Realities",
@@ -25,7 +39,7 @@
       "url": "https://www.youtube.com/watch?v=yUdk-gZAApw",
       "sourceUrl": "https://www.youtube.com/@EvenRealities",
       "thumbnail": "https://i.ytimg.com/vi/yUdk-gZAApw/maxresdefault.jpg",
-      "description": "Powering conversations that matter with Even G2.",
+      "description": "Powering conversations that matter with Even G2. Learn more: https://evenrealities.bio/ytb",
       "publishedAt": "2026-08-06T12:32:22Z",
       "verified": true
     },
@@ -81,7 +95,7 @@
       "url": "https://www.youtube.com/watch?v=hjZDZtTwd1Y",
       "sourceUrl": "https://www.youtube.com/@EvenRealities",
       "thumbnail": "https://i.ytimg.com/vi/hjZDZtTwd1Y/maxresdefault.jpg",
-      "description": "Could smart glasses change the way we approach cold calls? Sara Uy tests Even G2 in the latest episode of Even Sessions. Watch the full video now.",
+      "description": "Could smart glasses change the way we approach cold calls? Sara Uy tests Even G2 in the latest episode of Even Sessions. Watch the full video now. Learn more: https://evenrealities.bio/ytb",
       "publishedAt": "2026-08-05T14:10:38Z",
       "verified": true
     },
