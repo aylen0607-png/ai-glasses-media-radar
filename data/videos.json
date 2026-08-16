@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-08-15T03:58:57.597Z",
+  "updatedAt": "2026-08-16T04:09:33.767Z",
   "videos": [
+    {
+      "id": "even-g2-yt-5F7TGyGBPxQ",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Designing Smart Glasses, The Eyewear Way | Even Journal EP. 7",
+      "url": "https://www.youtube.com/watch?v=5F7TGyGBPxQ",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/5F7TGyGBPxQ/maxresdefault.jpg",
+      "description": "In Episode 7 of the Even Journal, we take a closer look at smart glasses from a different perspective: not the AI, HUD, or software, but the glasses themselves. We sit down with Philipp Haffmans, Principal Eyewear Designer at Even Realities, to explore more than 30 years of experience designing eyewear and the principles that separate a good pair of glasses ",
+      "publishedAt": "2026-08-15T12:22:08Z",
+      "verified": true
+    },
     {
       "id": "halliday-g2-yt-cJMUWFFxRVg",
       "brand": "Halliday",
@@ -91,7 +105,7 @@
       "product": "Rokid Glasses / Style",
       "region": "中国 / 全球",
       "type": "Official YouTube video",
-      "title": "Rokid Glasses HelmetMode Ver3 3",
+      "title": "Rokid Glasses HelmetMode",
       "url": "https://www.youtube.com/watch?v=lXwbuUAkvDA",
       "sourceUrl": "https://www.youtube.com/@rokidglobal",
       "thumbnail": "https://i.ytimg.com/vi/lXwbuUAkvDA/maxresdefault.jpg",
