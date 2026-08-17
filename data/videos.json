@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-08-16T04:09:33.767Z",
+  "updatedAt": "2026-08-17T04:25:52.186Z",
   "videos": [
+    {
+      "id": "halliday-g2-yt-AtjT2QWqF6A",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Take a closer look on Halliday G2",
+      "url": "https://www.youtube.com/watch?v=AtjT2QWqF6A",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/AtjT2QWqF6A/maxresdefault.jpg",
+      "description": "#halliday #hallidayg2 #aiglasses #technology #wearabletech",
+      "publishedAt": "2026-08-16T16:00:04Z",
+      "verified": true
+    },
     {
       "id": "even-g2-yt-5F7TGyGBPxQ",
       "brand": "Even Realities",
