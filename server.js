@@ -9,6 +9,7 @@ const dataDir = path.join(root, 'data');
 const publicDir = path.join(root, 'public');
 const sourcesPath = path.join(dataDir, 'sources.json');
 const videosPath = path.join(dataDir, 'videos.json');
+const socialPath = path.join(dataDir, 'social.json');
 const port = Number(process.env.PORT || 4173);
 
 const readJson = async (file, fallback) => {
@@ -177,6 +178,10 @@ const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host}`);
   if (url.pathname === '/api/videos') {
     const data = await readJson(videosPath, { updatedAt: null, videos: [] });
+    res.writeHead(200, { 'content-type': mime['.json'], 'cache-control': 'no-store' }); return res.end(JSON.stringify(data));
+  }
+  if (url.pathname === '/api/social') {
+    const data = await readJson(socialPath, { updatedAt: null, accounts: [], posts: [] });
     res.writeHead(200, { 'content-type': mime['.json'], 'cache-control': 'no-store' }); return res.end(JSON.stringify(data));
   }
   if (url.pathname === '/api/refresh' && req.method === 'POST') {

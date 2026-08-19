@@ -6,6 +6,7 @@
     <title>Lens Radar — AI 眼镜素材雷达</title>
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./preview.css" />
+    <link rel="stylesheet" href="./social.css" />
   </head>
   <body>
     <main>
@@ -21,11 +22,18 @@
       <section id="empty" class="empty hidden">暂未收集到新素材，请稍后再查看。</section>
       <section class="grid" id="grid"></section>
       <nav class="pagination hidden" id="pagination" aria-label="视频分页"></nav>
+      <section class="social-section" aria-labelledby="social-title">
+        <div class="social-heading"><div><p class="eyebrow">SOCIAL SIGNALS</p><h2 id="social-title">微博动态</h2><p>追踪品牌官方公开内容，补充发布、联名、功能更新与市场反馈信号。</p></div><span id="social-updated"></span></div>
+        <div class="social-accounts" id="social-accounts"></div>
+        <div class="social-grid" id="social-grid"></div>
+        <p class="social-note" id="social-note"></p>
+      </section>
       <footer>仅收录已配置品牌的公开官方页面、官方频道 RSS 与发布素材。点击卡片将在原始来源打开。</footer>
     </main>
     <button id="back-top" type="button" aria-label="回到顶部">↑<span>顶部</span></button>
     <dialog id="preview"><button class="close" aria-label="关闭预览">×</button><div id="player"></div><div class="preview-info"><span id="preview-brand"></span><h2 id="preview-title"></h2><a id="preview-source" target="_blank" rel="noreferrer">在官方来源打开 ↗</a></div></dialog>
     <template id="card"><article class="card"><div class="media"><button class="star" type="button" aria-label="加入星标" aria-pressed="false">☆</button><span class="play">▶</span><span class="kind"></span></div><div class="card-meta"><span class="brand-name"></span><time></time></div><h2></h2><div class="product"></div><section class="analysis"><p class="video-summary"></p><strong>营销借鉴</strong><ul class="takeaways"></ul></section><a target="_blank" rel="noreferrer">查看官方素材 <span>↗</span></a></article></template>
+    <template id="social-card"><article class="social-card"><div class="social-meta"><span class="social-platform"></span><time></time></div><div class="social-brand"></div><h3></h3><p class="social-summary"></p><div class="social-tags"></div><p class="social-insight"><strong>营销借鉴</strong><span></span></p><a target="_blank" rel="noreferrer">查看原帖 <span>↗</span></a></article></template>
     <script src="./app.js?v=20260806"></script>
   </body>
 </html>

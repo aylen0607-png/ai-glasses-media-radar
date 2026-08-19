@@ -130,6 +130,32 @@ function renderFilters() {
   filters.querySelectorAll('button').forEach((button) => button.addEventListener('click', () => { state.filter = button.dataset.filter; state.page = 1; renderFilters(); render(); }));
 }
 
+function renderSocial(data) {
+  const accounts = data.accounts || [];
+  const posts = [...(data.posts || [])].sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
+  document.querySelector('#social-updated').textContent = data.updatedAt ? `更新于 ${formatDate(data.updatedAt)}` : '';
+  document.querySelector('#social-note').textContent = data.notice || '';
+  document.querySelector('#social-accounts').innerHTML = accounts.map((account) =>
+    `<a href="${account.url}" target="_blank" rel="noreferrer"><span>${account.brand}</span><small>${account.status}</small></a>`
+  ).join('');
+  const socialGrid = document.querySelector('#social-grid');
+  socialGrid.innerHTML = '';
+  posts.forEach((post) => {
+    const node = document.querySelector('#social-card').content.cloneNode(true);
+    node.querySelector('.social-platform').textContent = post.platform;
+    node.querySelector('time').textContent = formatDate(post.publishedAt);
+    node.querySelector('.social-brand').textContent = `${post.brand} · ${post.account}`;
+    node.querySelector('h3').textContent = post.title;
+    node.querySelector('.social-summary').textContent = post.summary;
+    node.querySelector('.social-tags').innerHTML = (post.tags || []).map((tag) => `<span># ${tag}</span>`).join('');
+    node.querySelector('.social-insight span').textContent = post.marketingTakeaway;
+    const metrics = post.metrics ? `转发 ${post.metrics.reposts ?? '—'} · 评论 ${post.metrics.comments ?? '—'} · 赞 ${post.metrics.likes ?? '—'}` : '公开内容追踪中';
+    node.querySelector('.social-insight').insertAdjacentHTML('beforeend', `<small>${metrics}</small>`);
+    node.querySelector('a').href = post.url;
+    socialGrid.append(node);
+  });
+}
+
 async function load() {
   const response = await fetch(
     staticHosting ? `./data/videos.json?v=${Date.now()}` : '/api/videos',
@@ -137,6 +163,10 @@ async function load() {
   );
   const data = await response.json();
   state.videos = data.videos || [];
+  try {
+    const socialResponse = await fetch(staticHosting ? `./data/social.json?v=${Date.now()}` : '/api/social', { cache: 'no-store' });
+    renderSocial(await socialResponse.json());
+  } catch { renderSocial({ notice: '微博动态暂时不可用，不影响官方视频追踪。' }); }
   document.querySelector('#loading').classList.add('hidden'); renderFilters(); render();
 }
 searchForm.addEventListener('submit', (event) => {

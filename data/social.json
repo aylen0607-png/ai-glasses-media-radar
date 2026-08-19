@@ -1,0 +1,23 @@
+{
+  "updatedAt": "2026-08-19T00:00:00.000Z",
+  "notice": "仅展示已核验的公开品牌动态；微博访问受限时不会阻塞官方视频的每日更新。",
+  "accounts": [
+    { "brand": "雷鸟 RayNeo", "platform": "微博", "name": "RayNeo雷鸟创新", "url": "https://www.weibo.com/u/7679617347", "status": "已追踪" },
+    { "brand": "Rokid", "platform": "微博", "name": "Rokid乐奇", "url": "https://www.weibo.com/Rokid?tabtype=feed", "status": "已追踪" },
+    { "brand": "科大讯飞 iFLYTEK", "platform": "微博", "name": "科大讯飞", "url": "https://www.weibo.com/xunfeikuaixun", "status": "已追踪" },
+    { "brand": "小米", "platform": "微博", "name": "小米公司", "url": "https://www.weibo.com/1771925961", "status": "已追踪" },
+    { "brand": "夸克", "platform": "微博", "name": "夸克", "url": "https://weibo.com/a/hot/c4dc3d8aa27cb24d_0.html?type=grab", "status": "关键词追踪" },
+    { "brand": "闪极 Loomos", "platform": "微博", "name": "闪极科技", "url": "https://weibo.com", "status": "待核验账号" }
+  ],
+  "posts": [
+    {
+      "id": "weibo-rayneo-v3-ai-update-20250408", "platform": "微博", "brand": "雷鸟 RayNeo", "account": "RayNeo雷鸟创新", "publishedAt": "2025-04-08T16:32:00+08:00", "title": "RayNeo V3 摄像 AI 系统更新", "summary": "官方围绕 V3 的摄像 AI 更新发布内容，并以抽奖机制带动新品与功能的互动传播。", "tags": ["系统更新", "摄像 AI", "抽奖互动"], "metrics": { "reposts": 1183, "comments": 1030, "likes": 582 }, "url": "https://www.weibo.com/7679617347/5153196155601466", "marketingTakeaway": "用“功能升级 + 参与式抽奖”把 OTA 更新从技术公告变成可传播事件；适合在产品生命周期中持续制造内容节点。"
+    },
+    {
+      "id": "weibo-xiaomi-launch-20250626", "platform": "微博", "brand": "小米", "account": "小米公司", "publishedAt": "2025-06-26T00:00:00+08:00", "title": "小米人车家全生态发布会：小米 AI 眼镜亮相", "summary": "小米将 AI 眼镜放入“人车家全生态”发布会叙事，强调其是面向下一代的个人智能设备。", "tags": ["发布会", "生态", "新品亮相"], "metrics": { "reposts": 1676, "comments": 1649, "likes": 34324 }, "url": "https://www.weibo.com/1771925961/Pye8v552p", "marketingTakeaway": "不把眼镜孤立为单品，而是嵌入手机、汽车、家居生态；适合强化“已有设备越多，眼镜越有用”的协同价值。"
+    },
+    {
+      "id": "weibo-iflytek-supply-chain-20260625", "platform": "微博", "brand": "科大讯飞 iFLYTEK", "account": "科大讯飞", "publishedAt": "2026-06-25T15:23:00+08:00", "title": "讯飞 AI 眼镜的供应链与翻译能力传播", "summary": "官方转发媒体对讯飞 AI 眼镜的报道，主线是国产供应链、全球首创技术与翻译能力。", "tags": ["供应链", "翻译", "媒体背书"], "url": "https://www.weibo.com/xunfeikuaixun", "marketingTakeaway": "以权威媒体与供应链实力为信任背书，适合高客单商务型产品降低用户对新形态硬件的疑虑。"
+    }
+  ]
+}
