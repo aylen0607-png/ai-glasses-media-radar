@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-08-18T04:09:31.313Z",
+  "updatedAt": "2026-08-19T04:08:53.173Z",
   "videos": [
+    {
+      "id": "even-g2-yt-TcCK0Yejvu0",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Recognize the silhouettes?",
+      "url": "https://www.youtube.com/watch?v=TcCK0Yejvu0",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/TcCK0Yejvu0/maxresdefault.jpg",
+      "description": "Even R1. Even G2. Smart ring meets camera-free display glasses. Learn more: https://evenrealities.bio/ytb",
+      "publishedAt": "2026-08-18T11:37:30Z",
+      "verified": true
+    },
     {
       "id": "halliday-g2-yt-AtjT2QWqF6A",
       "brand": "Halliday",
