@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-08-19T04:08:53.173Z",
+  "updatedAt": "2026-08-20T04:09:22.564Z",
   "videos": [
+    {
+      "id": "rokid-video-yt-Nu5qccadJTE",
+      "brand": "Rokid",
+      "product": "Rokid Glasses / Style",
+      "region": "中国 / 全球",
+      "type": "Official YouTube video",
+      "title": "Rokid Glasses-What's New",
+      "url": "https://www.youtube.com/watch?v=Nu5qccadJTE",
+      "sourceUrl": "https://www.youtube.com/@rokidglobal",
+      "thumbnail": "https://i.ytimg.com/vi/Nu5qccadJTE/maxresdefault_live.jpg",
+      "description": "We will walk you through the new features introduced in Hi Rokid App V1.10, V1.11, and V1.12, and show you how to use them.",
+      "publishedAt": "2026-08-20T02:32:44Z",
+      "verified": true
+    },
     {
       "id": "even-g2-yt-TcCK0Yejvu0",
       "brand": "Even Realities",
