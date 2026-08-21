@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-08-20T04:09:22.564Z",
+  "updatedAt": "2026-08-21T04:22:32.768Z",
   "videos": [
+    {
+      "id": "even-g2-yt-GwAaBz2vZ_0",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "What’s New With Even Hub?",
+      "url": "https://www.youtube.com/watch?v=GwAaBz2vZ_0",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/GwAaBz2vZ_0/maxresdefault.jpg",
+      "description": "Caught up with David, Software Manager at Even Realities, for a quick look at what’s new with Even Hub and what’s coming next. Discover how Even Hub continues to expand what’s possible with Even G2. Learn more: https://evenrealities.bio/ytb",
+      "publishedAt": "2026-08-20T11:43:32Z",
+      "verified": true
+    },
     {
       "id": "rokid-video-yt-Nu5qccadJTE",
       "brand": "Rokid",
