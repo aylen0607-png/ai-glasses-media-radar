@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-08-21T04:22:32.768Z",
+  "updatedAt": "2026-08-22T04:04:28.692Z",
   "videos": [
+    {
+      "id": "halliday-g2-yt-oJSF2waFpRk",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "A 10/10 unboxing video of Halliday G2 just got released!",
+      "url": "https://www.youtube.com/watch?v=oJSF2waFpRk",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/oJSF2waFpRk/maxresdefault.jpg",
+      "description": "Watch it while it's hot 🔥 #halliday #hallidayg2 #aiglasses #technology #unboxingvideo",
+      "publishedAt": "2026-08-21T16:00:38Z",
+      "verified": true
+    },
     {
       "id": "even-g2-yt-GwAaBz2vZ_0",
       "brand": "Even Realities",
