@@ -1,6 +1,48 @@
 {
-  "updatedAt": "2026-08-26T04:22:29.129Z",
+  "updatedAt": "2026-08-28T07:04:51.900Z",
   "videos": [
+    {
+      "id": "rokid-video-yt-59YD86HB3N8",
+      "brand": "Rokid",
+      "product": "Rokid Glasses / Style",
+      "region": "中国 / 全球",
+      "type": "Official YouTube video",
+      "title": "Rokid Glasses-What's New",
+      "url": "https://www.youtube.com/watch?v=59YD86HB3N8",
+      "sourceUrl": "https://www.youtube.com/@rokidglobal",
+      "thumbnail": "https://i.ytimg.com/vi/59YD86HB3N8/maxresdefault.jpg",
+      "description": "We will walk you through the new features introduced in Hi Rokid App V1.10, V1.11, and V1.12, and show you how to use them.",
+      "publishedAt": "2026-08-27T15:52:00Z",
+      "verified": true
+    },
+    {
+      "id": "halliday-g2-yt-Kvj9CZ4deG4",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Save the date! Halliday G2 Official Pre-order opens at 9:00 AM(ET), September 3rd 🗓️",
+      "url": "https://www.youtube.com/watch?v=Kvj9CZ4deG4",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/Kvj9CZ4deG4/maxresdefault.jpg",
+      "description": "Only 7 days left on Priority Access ✅ $100 OFF ✅ Free Prescription Lenses Reserve now via link in bio 📎 #halliday #hallidayg2 #aiglasses #technology #tech",
+      "publishedAt": "2026-08-27T13:00:16Z",
+      "verified": true
+    },
+    {
+      "id": "halliday-g2-yt-NpbRHCqmOOE",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "​@dannywinget's Review After Spending 1 Month with Halliday G2",
+      "url": "https://www.youtube.com/watch?v=NpbRHCqmOOE",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/NpbRHCqmOOE/maxresdefault.jpg",
+      "description": "After 1 month wearing Halliday G2, @superscientific gave his honest take on how they fit into his everyday moments. #halliday #hallidayg2 #aiglasses #technology #reviews",
+      "publishedAt": "2026-08-26T14:00:15Z",
+      "verified": true
+    },
     {
       "id": "halliday-g2-yt-Fac93sChkZ0",
       "brand": "Halliday",
@@ -41,20 +83,6 @@
       "thumbnail": "https://i.ytimg.com/vi/GwAaBz2vZ_0/maxresdefault.jpg",
       "description": "Caught up with David, Software Manager at Even Realities, for a quick look at what’s new with Even Hub and what’s coming next. Discover how Even Hub continues to expand what’s possible with Even G2. Learn more: https://evenrealities.bio/ytb",
       "publishedAt": "2026-08-20T11:43:32Z",
-      "verified": true
-    },
-    {
-      "id": "rokid-video-yt-Nu5qccadJTE",
-      "brand": "Rokid",
-      "product": "Rokid Glasses / Style",
-      "region": "中国 / 全球",
-      "type": "Official YouTube video",
-      "title": "Rokid Glasses-What's New",
-      "url": "https://www.youtube.com/watch?v=Nu5qccadJTE",
-      "sourceUrl": "https://www.youtube.com/@rokidglobal",
-      "thumbnail": "https://i.ytimg.com/vi/Nu5qccadJTE/maxresdefault_live.jpg",
-      "description": "We will walk you through the new features introduced in Hi Rokid App V1.10, V1.11, and V1.12, and show you how to use them.",
-      "publishedAt": "2026-08-20T02:32:44Z",
       "verified": true
     },
     {
