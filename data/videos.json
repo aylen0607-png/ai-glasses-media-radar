@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-09-01T07:12:50.298Z",
+  "updatedAt": "2026-09-02T06:46:57.771Z",
   "videos": [
+    {
+      "id": "halliday-g2-yt-0JZmGoBJnPA",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Can you spot the AI glasses among 8 pairs?",
+      "url": "https://www.youtube.com/watch?v=0JZmGoBJnPA",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/0JZmGoBJnPA/maxresdefault.jpg",
+      "description": "We took this challenge to the streets. 👀 #streetinterview #halliday #hallidayg2 #aiglasses #technology",
+      "publishedAt": "2026-09-01T14:00:05Z",
+      "verified": true
+    },
     {
       "id": "even-g2-yt-d-cPtBeUe7k",
       "brand": "Even Realities",
