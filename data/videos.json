@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-09-02T06:46:57.771Z",
+  "updatedAt": "2026-09-03T06:49:32.866Z",
   "videos": [
+    {
+      "id": "halliday-g2-yt-FP1Gmm7jVeo",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "⏳ Only 24 hours left until Halliday G2 Official Pre-order",
+      "url": "https://www.youtube.com/watch?v=FP1Gmm7jVeo",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/FP1Gmm7jVeo/maxresdefault.jpg",
+      "description": "Halliday G2 Official Pre-order opens at 9:00 AM(ET), September 3rd 📆 Last chance to get your Priority Access ✅ $100 OFF ✅ Free Prescription Lenses Reserve now via link in bio 🔗 #halliday #hallidayg2 #aiglasses #technology #countdown",
+      "publishedAt": "2026-09-02T13:00:23Z",
+      "verified": true
+    },
     {
       "id": "halliday-g2-yt-0JZmGoBJnPA",
       "brand": "Halliday",
@@ -25,7 +39,7 @@
       "url": "https://www.youtube.com/watch?v=d-cPtBeUe7k",
       "sourceUrl": "https://www.youtube.com/@EvenRealities",
       "thumbnail": "https://i.ytimg.com/vi/d-cPtBeUe7k/maxresdefault.jpg",
-      "description": "Daily Workflow with Even G2. Start your week right.",
+      "description": "Daily Workflow with Even G2. Start your week right. Learn more: https://evenrealities.bio/ytb",
       "publishedAt": "2026-08-31T19:29:26Z",
       "verified": true
     },
