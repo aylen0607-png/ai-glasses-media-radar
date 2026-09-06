@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-09-05T06:39:21.493Z",
+  "updatedAt": "2026-09-06T06:49:11.986Z",
   "videos": [
+    {
+      "id": "rokid-video-yt-yaHmlhlXluc",
+      "brand": "Rokid",
+      "product": "Rokid Glasses / Style",
+      "region": "中国 / 全球",
+      "type": "Official YouTube video",
+      "title": "Rokid Glasses at IFA: Day 1 | Hands-On Reactions from Around the World",
+      "url": "https://www.youtube.com/watch?v=yaHmlhlXluc",
+      "sourceUrl": "https://www.youtube.com/@rokidglobal",
+      "thumbnail": "https://i.ytimg.com/vi/yaHmlhlXluc/maxresdefault.jpg",
+      "description": "Day 1 at IFA brought visitors and media from around the world to the Rokid booth to try Rokid Glasses and share their impressions. IFA also organized a media group visit to our booth, giving more journalists a chance to experience the glasses and meet the team. We were especially happy to welcome people who already own Rokid Glasses and made a point of stopp",
+      "publishedAt": "2026-09-05T17:18:59Z",
+      "verified": true
+    },
     {
       "id": "halliday-g2-yt-VUHRarO-wKA",
       "brand": "Halliday",
