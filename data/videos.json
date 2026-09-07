@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-09-06T06:49:11.986Z",
+  "updatedAt": "2026-09-07T06:58:30.652Z",
   "videos": [
+    {
+      "id": "halliday-g2-yt-93gEFo2PMFk",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "A coach's day never really pauses, it just shifts gears. Halliday G2 keeps pace the whole way.",
+      "url": "https://www.youtube.com/watch?v=93gEFo2PMFk",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/93gEFo2PMFk/maxresdefault.jpg",
+      "description": "Also now you know how many calories there are in one croissant 🥐 #halliday #hallidayG2 #AIGlasses #dayinthelife #POV",
+      "publishedAt": "2026-09-06T13:00:01Z",
+      "verified": true
+    },
     {
       "id": "rokid-video-yt-yaHmlhlXluc",
       "brand": "Rokid",
