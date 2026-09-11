@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-09-10T06:58:57.128Z",
+  "updatedAt": "2026-09-11T06:58:35.925Z",
   "videos": [
+    {
+      "id": "halliday-g2-yt-Obq2WY-6FXQ",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Learn Another Language With Halliday G2",
+      "url": "https://www.youtube.com/watch?v=Obq2WY-6FXQ",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/Obq2WY-6FXQ/maxresdefault.jpg",
+      "description": "Halliday G2's Translation doesn't just translate. It lets you stay in the moment and understand the language in a soft and natural way. #halliday #hallidayg2 #aiglasses #languagelearning #technology",
+      "publishedAt": "2026-09-10T13:00:05Z",
+      "verified": true
+    },
     {
       "id": "halliday-g2-yt-xs3B6-sa3N4",
       "brand": "Halliday",
