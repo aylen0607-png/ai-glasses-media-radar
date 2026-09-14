@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-09-13T07:08:32.853Z",
+  "updatedAt": "2026-09-14T07:31:59.515Z",
   "videos": [
+    {
+      "id": "halliday-g2-yt-wzmX-OUWj_s",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "A ceiling-level compliment from one of our testers on Discord.",
+      "url": "https://www.youtube.com/watch?v=wzmX-OUWj_s",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/wzmX-OUWj_s/maxresdefault.jpg",
+      "description": "And yes, speakers on Halliday G2 do offer you a stereo experience with your podcasts, music, audiobooks, and calls 📞🎶 #hallidayg2 #aiglasses #stereo #audioexperience #technology",
+      "publishedAt": "2026-09-13T13:00:25Z",
+      "verified": true
+    },
     {
       "id": "halliday-g2-yt-Obq2WY-6FXQ",
       "brand": "Halliday",
