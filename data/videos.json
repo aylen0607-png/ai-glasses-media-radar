@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-09-16T07:10:43.469Z",
+  "updatedAt": "2026-09-17T07:07:56.856Z",
   "videos": [
+    {
+      "id": "halliday-g2-yt-TbJ4mnQ9_Oo",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Pairing Halliday G2 takes less than a minute!",
+      "url": "https://www.youtube.com/watch?v=TbJ4mnQ9_Oo",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/TbJ4mnQ9_Oo/maxresdefault.jpg",
+      "description": "Save this video for when you need it 📌 #halliday #hallidayg2 #aiglasses #technology #tutorials",
+      "publishedAt": "2026-09-16T13:00:29Z",
+      "verified": true
+    },
     {
       "id": "even-g2-yt-ImdciMR_T-A",
       "brand": "Even Realities",
