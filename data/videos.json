@@ -1,13 +1,41 @@
 {
-  "updatedAt": "2026-09-19T07:00:18.168Z",
+  "updatedAt": "2026-09-20T07:25:15.190Z",
   "videos": [
+    {
+      "id": "halliday-g2-yt-7L4DBzCUqXc",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "No camera, your experience with Halliday G2 stays private and safe.",
+      "url": "https://www.youtube.com/watch?v=7L4DBzCUqXc",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/7L4DBzCUqXc/maxresdefault.jpg",
+      "description": "Halliday G2 has no camera, so there's no unauthorized filming or recording. Privacy is built into the design, not added as an afterthought. Your experience stays private and safe. 🔒#hallidayg2 #nocamera #privacy #aiglasses #technology",
+      "publishedAt": "2026-09-19T13:00:30Z",
+      "verified": true
+    },
+    {
+      "id": "rokid-video-yt-3aBBeX53TJ8",
+      "brand": "Rokid",
+      "product": "Rokid Glasses / Style",
+      "region": "中国 / 全球",
+      "type": "Official YouTube video",
+      "title": "Rokid Glasses | Real-Time Translation for Travel",
+      "url": "https://www.youtube.com/watch?v=3aBBeX53TJ8",
+      "sourceUrl": "https://www.youtube.com/@rokidglobal",
+      "thumbnail": "https://i.ytimg.com/vi/3aBBeX53TJ8/maxresdefault.jpg",
+      "description": "A broken AC. A language barrier. One very prepared travel companion. In this playful hotel story, Rokid Glasses help turn a confusing front-desk conversation into a two-way exchange. Watch English and Spanish translation in action, with translated text on the glasses and phone. Less lost in translation. More enjoying the journey. Subscribe for more ways to u",
+      "publishedAt": "2026-09-19T10:54:16Z",
+      "verified": true
+    },
     {
       "id": "rayban-meta-yt-KRFQWJWATis",
       "brand": "Meta × Ray-Ban",
       "product": "Ray-Ban Meta Gen 2",
       "region": "海外",
       "type": "Official YouTube video",
-      "title": "Ray-Ban Meta Accessories That Are Worth the Hype",
+      "title": "5 Ray-Ban Meta Accessories That Changed Everything",
       "url": "https://www.youtube.com/watch?v=KRFQWJWATis",
       "sourceUrl": "https://www.youtube.com/@raybanmeta",
       "thumbnail": "https://i.ytimg.com/vi/KRFQWJWATis/maxresdefault.jpg",
