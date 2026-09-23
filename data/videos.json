@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-09-22T07:15:23.689Z",
+  "updatedAt": "2026-09-23T07:18:17.258Z",
   "videos": [
+    {
+      "id": "even-g2-yt-XEZQ_1aleYU",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "What If Camera Glasses Put a Price on Privacy? | EXPOSED Teaser",
+      "url": "https://www.youtube.com/watch?v=XEZQ_1aleYU",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/XEZQ_1aleYU/hqdefault.jpg",
+      "description": "EXPOSED is a new short series set in a near future where camera glasses are everywhere. Even an hour of privacy comes at a price. All 8 episodes drop October 8. Subscribe to Even Realities to watch the full series. Learn more: https://evenrealities.bio/ytb",
+      "publishedAt": "2026-09-22T12:00:09Z",
+      "verified": true
+    },
     {
       "id": "halliday-g2-yt-7L4DBzCUqXc",
       "brand": "Halliday",
