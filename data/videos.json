@@ -1,6 +1,48 @@
 {
-  "updatedAt": "2026-09-24T07:08:24.348Z",
+  "updatedAt": "2026-09-25T07:06:00.982Z",
   "videos": [
+    {
+      "id": "rayban-meta-yt-79tpYt0UfSU",
+      "brand": "Meta × Ray-Ban",
+      "product": "Ray-Ban Meta Gen 2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "your playlist has a new home 🎶",
+      "url": "https://www.youtube.com/watch?v=79tpYt0UfSU",
+      "sourceUrl": "https://www.youtube.com/@raybanmeta",
+      "thumbnail": "https://i.ytimg.com/vi/79tpYt0UfSU/maxresdefault.jpg",
+      "description": "say hello to Ray-Ban Meta Audio 😎 pre-order Clubmaster and Burbank now #MetaConnect",
+      "publishedAt": "2026-09-25T00:18:04Z",
+      "verified": true
+    },
+    {
+      "id": "rayban-meta-yt-viNvJnJoDds",
+      "brand": "Meta × Ray-Ban",
+      "product": "Ray-Ban Meta Gen 2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "feels so light, sounds just right 👓🎶",
+      "url": "https://www.youtube.com/watch?v=viNvJnJoDds",
+      "sourceUrl": "https://www.youtube.com/@raybanmeta",
+      "thumbnail": "https://i.ytimg.com/vi/viNvJnJoDds/maxresdefault.jpg",
+      "description": "Ray-Ban Meta Audio comes in our lightest frames yet with up to 12 hours of hands-free music, calling, and texting 🙂‍↕️ pre-order Clubmaster and Burbank now (link in bio) #MetaConnect",
+      "publishedAt": "2026-09-24T17:15:10Z",
+      "verified": true
+    },
+    {
+      "id": "halliday-g2-yt-7igwjymyz8g",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Halliday G2, Fit for Your Everyday Look",
+      "url": "https://www.youtube.com/watch?v=7igwjymyz8g",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/7igwjymyz8g/maxresdefault.jpg",
+      "description": "Before its powerful AI features, Halliday G2 is a great pair of glasses. Chic, professional, and edgy, made for your everyday look. #hallidayg2 #aiglasses #eyewear #fashion #technology",
+      "publishedAt": "2026-09-24T13:00:15Z",
+      "verified": true
+    },
     {
       "id": "halliday-g2-yt-RPnghGDHENw",
       "brand": "Halliday",
