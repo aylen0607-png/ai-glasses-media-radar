@@ -1,6 +1,34 @@
 {
-  "updatedAt": "2026-09-25T07:06:00.982Z",
+  "updatedAt": "2026-09-26T07:03:02.281Z",
   "videos": [
+    {
+      "id": "rayban-meta-yt-fSPdvtFQmhk",
+      "brand": "Meta × Ray-Ban",
+      "product": "Ray-Ban Meta Gen 2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "roller skating + open-ear speakers = instant flow state 💛🛼🎶",
+      "url": "https://www.youtube.com/watch?v=fSPdvtFQmhk",
+      "sourceUrl": "https://www.youtube.com/@raybanmeta",
+      "thumbnail": "https://i.ytimg.com/vi/fSPdvtFQmhk/maxresdefault.jpg",
+      "description": "pre-order Ray-Ban Meta Audio Clubmaster now (link in bio)",
+      "publishedAt": "2026-09-25T22:08:17Z",
+      "verified": true
+    },
+    {
+      "id": "rayban-meta-yt-adGoABHerGA",
+      "brand": "Meta × Ray-Ban",
+      "product": "Ray-Ban Meta Gen 2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "made for the sky in 1937 🕶️✈️",
+      "url": "https://www.youtube.com/watch?v=adGoABHerGA",
+      "sourceUrl": "https://www.youtube.com/@raybanmeta",
+      "thumbnail": "https://i.ytimg.com/vi/adGoABHerGA/maxresdefault.jpg",
+      "description": "our limited-edition Ray-Ban Meta Aviator is here 😎 📷 12 MP camera, 3K video 🗣️ Meta AI built-in 🔋 up to 9 hours of battery life 🤎 vintage-inspired colorway available now in limited quantities",
+      "publishedAt": "2026-09-25T15:04:51Z",
+      "verified": true
+    },
     {
       "id": "rayban-meta-yt-79tpYt0UfSU",
       "brand": "Meta × Ray-Ban",
