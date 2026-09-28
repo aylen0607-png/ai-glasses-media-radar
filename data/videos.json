@@ -1,6 +1,34 @@
 {
-  "updatedAt": "2026-09-27T07:33:19.482Z",
+  "updatedAt": "2026-09-28T08:10:57.058Z",
   "videos": [
+    {
+      "id": "even-g2-yt-SCi-S6dWz1Q",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Are Cameras the Future of Smart Glasses?",
+      "url": "https://www.youtube.com/watch?v=SCi-S6dWz1Q",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/SCi-S6dWz1Q/maxresdefault.jpg",
+      "description": "Smart glasses are becoming more capable, but where should privacy fit in? In this episode of Even Journal, we explore why camera-free design matters, how wearable technology can respect the people around us, and the thinking behind Even G2.",
+      "publishedAt": "2026-09-27T14:00:26Z",
+      "verified": true
+    },
+    {
+      "id": "even-g2-yt-uVLnmOWqMyk",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Privacy-First Smart Glasses | Even Journal EP. 8",
+      "url": "https://www.youtube.com/watch?v=uVLnmOWqMyk",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/uVLnmOWqMyk/maxresdefault.jpg",
+      "description": "In Episode 8 of Even Journal, we explore one of the biggest conversations surrounding smart glasses today: privacy. As wearable technology becomes more integrated into everyday life, the question isn’t only what smart glasses can do, but how they should be designed. We look at why Even G2 takes a camera-free approach, how privacy has shaped Even Realities fr",
+      "publishedAt": "2026-09-27T14:00:16Z",
+      "verified": true
+    },
     {
       "id": "halliday-g2-yt-Ep7rhyd703E",
       "brand": "Halliday",
