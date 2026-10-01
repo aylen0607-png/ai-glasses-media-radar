@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-09-30T07:56:05.623Z",
+  "updatedAt": "2026-10-01T08:16:42.800Z",
   "videos": [
+    {
+      "id": "halliday-g2-yt-N-YWz-Daio0",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "thejunglebadger's Experience with Halliday G2",
+      "url": "https://www.youtube.com/watch?v=N-YWz-Daio0",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/N-YWz-Daio0/maxresdefault.jpg",
+      "description": "Wondering how you should interact with AI glasses? 🤔 @thejunglebadger502 tried Halliday G2 and here's his honest take! Watch the video to see what he thinks 👉 #hallidayg2 #aiglasses #technology #techreview #wearabletech",
+      "publishedAt": "2026-09-30T13:00:11Z",
+      "verified": true
+    },
     {
       "id": "even-g2-yt-7hcoN0N8LJU",
       "brand": "Even Realities",
