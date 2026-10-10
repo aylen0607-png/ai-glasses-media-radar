@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-10-09T08:26:55.990Z",
+  "updatedAt": "2026-10-10T08:04:38.117Z",
   "videos": [
+    {
+      "id": "halliday-g2-yt-SsFx5Dz6nic",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Never Miss a Word with Halliday G2",
+      "url": "https://www.youtube.com/watch?v=SsFx5Dz6nic",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/SsFx5Dz6nic/maxresdefault.jpg",
+      "description": "Afraid of blanking mid-presentation? 😰 Halliday G2 has a built-in cheatsheet function that shows your next line right in your eyes, so you never miss a word. 👓✨ #halliday #hallidayg2 #aiglasses #PresentationTips #technology",
+      "publishedAt": "2026-10-09T13:00:06Z",
+      "verified": true
+    },
     {
       "id": "rokid-video-yt-LmjPCUijhx4",
       "brand": "Rokid",
@@ -13,6 +27,20 @@
       "thumbnail": "https://i.ytimg.com/vi/LmjPCUijhx4/maxresdefault.jpg",
       "description": "Build an agent for Rokid Glasses without leaving your browser. One sentence in AIUI Studio becomes a working project — then we refine it with AI, test it in Device Simulation, and package it in Build & Review for the Agent store. LINKS AIUI Studio: https://aiui-global.rokid.com Docs: https://js.rokid.com/AIUI GitHub (docs, samples, aiui-dev skill): https://g",
       "publishedAt": "2026-10-09T08:14:39Z",
+      "verified": true
+    },
+    {
+      "id": "rayban-meta-yt-GvgXgQ6YFTU",
+      "brand": "Meta × Ray-Ban",
+      "product": "Ray-Ban Meta Gen 2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "vintage style that looks forward 👓",
+      "url": "https://www.youtube.com/watch?v=GvgXgQ6YFTU",
+      "sourceUrl": "https://www.youtube.com/@raybanmeta",
+      "thumbnail": "https://i.ytimg.com/vi/GvgXgQ6YFTU/maxresdefault.jpg",
+      "description": "our limited-edition Ray-Ban Meta Aviator comes in a Milky Warm Beige, featuring integrated Meta AI and a 12 MP camera with 3K Ultra HD video ✨",
+      "publishedAt": "2026-10-08T16:25:25Z",
       "verified": true
     },
     {
