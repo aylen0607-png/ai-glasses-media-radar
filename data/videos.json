@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-10-10T08:04:38.117Z",
+  "updatedAt": "2026-10-11T08:15:27.061Z",
   "videos": [
+    {
+      "id": "rokid-video-yt-NTFCAjm-YWU",
+      "brand": "Rokid",
+      "product": "Rokid Glasses / Style",
+      "region": "中国 / 全球",
+      "type": "Official YouTube video",
+      "title": "POV Riding a Cybercab with Rokid Glasses",
+      "url": "https://www.youtube.com/watch?v=NTFCAjm-YWU",
+      "sourceUrl": "https://www.youtube.com/@rokidglobal",
+      "thumbnail": "https://i.ytimg.com/vi/NTFCAjm-YWU/maxresdefault.jpg",
+      "description": "A first-person Cybercab ride captured hands-free on Rokid Glasses. Step inside and see the ride through our eyes. #RokidGlasses #Cybercab #POV #Shorts",
+      "publishedAt": "2026-10-10T09:19:55Z",
+      "verified": true
+    },
     {
       "id": "halliday-g2-yt-SsFx5Dz6nic",
       "brand": "Halliday",
