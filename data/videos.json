@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-10-18T06:56:07.054Z",
+  "updatedAt": "2026-10-19T07:16:42.946Z",
   "videos": [
+    {
+      "id": "halliday-g2-yt-W7ng3ECwZis",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Nathan Espinoza's Review of Halliday G2",
+      "url": "https://www.youtube.com/watch?v=W7ng3ECwZis",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/W7ng3ECwZis/maxresdefault.jpg",
+      "description": "See Halliday G2 in action 🎥 @NathanEspinoza takes you through what it can do, in his full review. #HallidayG2 #AIGlasses #TechReview #Technology #WearableTech",
+      "publishedAt": "2026-10-18T13:00:11Z",
+      "verified": true
+    },
     {
       "id": "halliday-g2-yt-1sy7IDPLCFE",
       "brand": "Halliday",
