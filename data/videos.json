@@ -1,6 +1,34 @@
 {
-  "updatedAt": "2026-10-20T07:07:37.704Z",
+  "updatedAt": "2026-10-21T07:00:28.998Z",
   "videos": [
+    {
+      "id": "rayban-meta-yt-fhEv1uhqVvI",
+      "brand": "Meta × Ray-Ban",
+      "product": "Ray-Ban Meta Gen 2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "My camera crew is on my face.",
+      "url": "https://www.youtube.com/watch?v=fhEv1uhqVvI",
+      "sourceUrl": "https://www.youtube.com/@raybanmeta",
+      "thumbnail": "https://i.ytimg.com/vi/fhEv1uhqVvI/maxresdefault.jpg",
+      "description": "Stuck on that blank page moment? Watch as @ddames fixes his mental block in pre-production stages with the help of Ray-Ban Meta ✅ Don't forget to SUBSCRIBE to our channel by clicking here ➞ https://www.youtube.com/@raybanmeta?sub_confirmation=1 ▶️ Check out our favorite videos ➞ https://www.youtube.com/playlist?list=PLmoBHG-SYnFURlfFXxWA8kBbYm1x8scip Whether",
+      "publishedAt": "2026-10-20T19:00:07Z",
+      "verified": true
+    },
+    {
+      "id": "even-g2-yt-jC8vWDzKdEY",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Built by You: Episode 2 | enkiRIDION",
+      "url": "https://www.youtube.com/watch?v=jC8vWDzKdEY",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/jC8vWDzKdEY/maxresdefault.jpg",
+      "description": "Meet Salamanca, a fine dining server and self-taught developer based in Fort Lauderdale. enkiRIDION is a Stoic philosophy app for Even G2. It brings a single thought, quote or question into your line of sight, so you can pause, reflect and return to your day with a little more intention. Try enkiRIDION on Even Hub: https://evenhub.evenrealities.com/landing?p",
+      "publishedAt": "2026-10-20T13:00:33Z",
+      "verified": true
+    },
     {
       "id": "halliday-g2-yt-W7ng3ECwZis",
       "brand": "Halliday",
