@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-10-21T07:00:28.998Z",
+  "updatedAt": "2026-10-22T07:02:39.685Z",
   "videos": [
+    {
+      "id": "halliday-g2-yt-ETxU6yxnSW4",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Life with Halliday: Kobo Yoshitsugu, founder of HINEMOS and Ondo",
+      "url": "https://www.youtube.com/watch?v=ETxU6yxnSW4",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/ETxU6yxnSW4/maxresdefault.jpg",
+      "description": "Kobo Yoshitsugu, founder of HINEMOS and Ondo, shares how he uses Halliday G2 in his daily life. #halliday #hallidayg2 #lifewithHalliday #userstories #aiglasses",
+      "publishedAt": "2026-10-21T13:00:10Z",
+      "verified": true
+    },
     {
       "id": "rayban-meta-yt-fhEv1uhqVvI",
       "brand": "Meta × Ray-Ban",
@@ -5036,7 +5050,7 @@
       "title": "Even Realities Live Stream",
       "url": "https://www.youtube.com/watch?v=uc_HLuC3n3c",
       "sourceUrl": "https://www.youtube.com/@EvenRealities",
-      "thumbnail": "https://i.ytimg.com/vi/uc_HLuC3n3c/maxresdefault_live.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/uc_HLuC3n3c/maxresdefault.jpg",
       "description": "",
       "publishedAt": "2025-07-10T03:00:36Z",
       "verified": true
