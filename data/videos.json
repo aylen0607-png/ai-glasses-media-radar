@@ -1,6 +1,48 @@
 {
-  "updatedAt": "2026-10-23T06:54:53.177Z",
+  "updatedAt": "2026-10-24T06:51:06.999Z",
   "videos": [
+    {
+      "id": "rayban-meta-yt-l5UF3HlsNTg",
+      "brand": "Meta × Ray-Ban",
+      "product": "Ray-Ban Meta Gen 2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Doja Cat's tour in POV 👓 Filmed by her and her team on Ray-Ban Meta glasses.",
+      "url": "https://www.youtube.com/watch?v=l5UF3HlsNTg",
+      "sourceUrl": "https://www.youtube.com/@raybanmeta",
+      "thumbnail": "https://i.ytimg.com/vi/l5UF3HlsNTg/maxresdefault.jpg",
+      "description": "Watch the full Tour Ma Vie film on https://youtu.be/cZuctyTGHNU?si=XufgCllGqONfDi-i 🎬",
+      "publishedAt": "2026-10-24T03:35:30Z",
+      "verified": true
+    },
+    {
+      "id": "halliday-g2-yt-eg6KAktjzNk",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Justin Tse Has Something to Say about Halliday G2",
+      "url": "https://www.youtube.com/watch?v=eg6KAktjzNk",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/eg6KAktjzNk/maxresdefault.jpg",
+      "description": "See his insight in the video ✨ @JustinTse",
+      "publishedAt": "2026-10-23T13:00:10Z",
+      "verified": true
+    },
+    {
+      "id": "even-g2-yt-TjT80l30s78",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "What Does a Paris Optician Think of Smart Glasses?",
+      "url": "https://www.youtube.com/watch?v=TjT80l30s78",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/TjT80l30s78/maxresdefault.jpg",
+      "description": "Taking a closer look at the design and craftsmanship of Even G2 through an optical professional's perspective.",
+      "publishedAt": "2026-10-23T12:00:00Z",
+      "verified": true
+    },
     {
       "id": "halliday-g2-yt-ETxU6yxnSW4",
       "brand": "Halliday",
