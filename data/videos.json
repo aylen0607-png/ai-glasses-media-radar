@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-10-27T07:15:16.303Z",
+  "updatedAt": "2026-10-28T07:53:43.472Z",
   "videos": [
+    {
+      "id": "rayban-meta-yt-RDlWFJinPOM",
+      "brand": "Meta × Ray-Ban",
+      "product": "Ray-Ban Meta Gen 2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "some bonus bts for you with GloRilla in her Ray-Ban Meta Audio glasses 👀👓",
+      "url": "https://www.youtube.com/watch?v=RDlWFJinPOM",
+      "sourceUrl": "https://www.youtube.com/@raybanmeta",
+      "thumbnail": "https://i.ytimg.com/vi/RDlWFJinPOM/maxresdefault.jpg",
+      "description": "",
+      "publishedAt": "2026-10-27T16:03:42Z",
+      "verified": true
+    },
     {
       "id": "even-g2-yt-F3IDFkDMFIY",
       "brand": "Even Realities",
@@ -249,7 +263,7 @@
       "url": "https://www.youtube.com/watch?v=h1MFnZXLbY4",
       "sourceUrl": "https://www.youtube.com/@EvenRealities",
       "thumbnail": "https://i.ytimg.com/vi/h1MFnZXLbY4/maxresdefault.jpg",
-      "description": "Look closer. Nothing's looking back.",
+      "description": "Look closer. Nothing's looking back. Learn more: https://evenrealities.bio/ytb",
       "publishedAt": "2026-10-05T15:34:13Z",
       "verified": true
     },
