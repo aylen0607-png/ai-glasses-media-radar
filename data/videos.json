@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-10-28T07:53:43.472Z",
+  "updatedAt": "2026-10-29T07:58:53.653Z",
   "videos": [
+    {
+      "id": "even-g2-yt-2StsRcKDaRg",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Optical Experts' First Look | Brown 2",
+      "url": "https://www.youtube.com/watch?v=2StsRcKDaRg",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/2StsRcKDaRg/maxresdefault.jpg",
+      "description": "Eyewear pros and stylists share their first reactions to Even G2 Brown 2. Learn more: https://evenrealities.bio/ytb",
+      "publishedAt": "2026-10-28T13:00:12Z",
+      "verified": true
+    },
     {
       "id": "rayban-meta-yt-RDlWFJinPOM",
       "brand": "Meta × Ray-Ban",
