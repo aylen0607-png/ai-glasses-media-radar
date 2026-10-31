@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-10-30T08:01:28.397Z",
+  "updatedAt": "2026-10-31T07:58:13.149Z",
   "videos": [
+    {
+      "id": "halliday-g2-yt-1xQYZVtR5CI",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Life with Halliday: Kevin, GTM Lead at a Global Tech Company",
+      "url": "https://www.youtube.com/watch?v=1xQYZVtR5CI",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/1xQYZVtR5CI/maxresdefault.jpg",
+      "description": "Kevin, a GTM lead at a global tech company, wears Halliday G2 throughout his day. Privacy is his top consideration when choosing a wearable: no camera, and a private display. 🎥 Watch the full video to see how Halliday fits into Kevin’s everyday moments. #halliday #hallidayg2 #aiglasses #technology #privacymatters",
+      "publishedAt": "2026-10-30T13:00:32Z",
+      "verified": true
+    },
     {
       "id": "even-g2-yt-EV11hQqA7do",
       "brand": "Even Realities",
