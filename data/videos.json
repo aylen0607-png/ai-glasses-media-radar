@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-11-03T08:59:10.398Z",
+  "updatedAt": "2026-11-04T08:34:20.739Z",
   "videos": [
+    {
+      "id": "even-g2-yt-3jkvXUaFllc",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Truth or Dare? Optical Professionals React to Even G2",
+      "url": "https://www.youtube.com/watch?v=3jkvXUaFllc",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/3jkvXUaFllc/maxresdefault.jpg",
+      "description": "We put Even G2 to the test with the people who know eyewear best. What would you ask an optical professional about Even G2?",
+      "publishedAt": "2026-11-03T13:00:20Z",
+      "verified": true
+    },
     {
       "id": "halliday-g2-yt-1xQYZVtR5CI",
       "brand": "Halliday",
