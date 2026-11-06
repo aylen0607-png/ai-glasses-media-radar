@@ -1,6 +1,34 @@
 {
-  "updatedAt": "2026-11-05T08:55:38.556Z",
+  "updatedAt": "2026-11-06T08:54:58.941Z",
   "videos": [
+    {
+      "id": "even-g2-yt-zxYVDMEqoKw",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "An Interview with Keisuke Honda | Honda's Even G2",
+      "url": "https://www.youtube.com/watch?v=zxYVDMEqoKw",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/zxYVDMEqoKw/maxresdefault.jpg",
+      "description": "Keisuke Honda sits down to answer your questions about Even G2 and where smart glasses fit into professional and daily life. From how they work to who they’re built for, this conversation covers what it’s like to wear a display on your face for the day, and what that could mean for how we use technology going forward. In this video: 0:00 Introduction 0:20 Wh",
+      "publishedAt": "2026-11-05T23:00:13Z",
+      "verified": true
+    },
+    {
+      "id": "halliday-g2-yt-_bTCNsba4OM",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Life with Halliday: Emilia, a Swedish Architect with an Adventurous Spirit",
+      "url": "https://www.youtube.com/watch?v=_bTCNsba4OM",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/_bTCNsba4OM/maxresdefault.jpg",
+      "description": "As an architect, Emilia finds inspiration in the world around her through the lenses of Halliday G2. Watch the full video to see how Halliday fits into her work and everyday life. #hallidayg2 #aiglasses #technology #architects #storytime",
+      "publishedAt": "2026-11-05T13:00:39Z",
+      "verified": true
+    },
     {
       "id": "even-g2-yt-3jkvXUaFllc",
       "brand": "Even Realities",
@@ -1477,7 +1505,7 @@
       "region": "海外",
       "type": "Official video",
       "title": "Halliday G2（预售）",
-      "url": "https://cdn.shopify.com/oxygen-v2/56919/151838/310768/4941518/assets/desktop-video-BRJXW1zh.mp4",
+      "url": "https://cdn.shopify.com/oxygen-v2/56919/151838/310768/4984303/assets/desktop-video-BRJXW1zh.mp4",
       "sourceUrl": "https://www.hallidayglobal.com/",
       "publishedAt": "2026-07-21",
       "thumbnail": "",
@@ -1490,7 +1518,7 @@
       "region": "海外",
       "type": "Official video",
       "title": "Halliday G2（预售）",
-      "url": "https://cdn.shopify.com/oxygen-v2/56919/151838/310768/4941518/assets/mobile-video-CAp7RInW.mp4",
+      "url": "https://cdn.shopify.com/oxygen-v2/56919/151838/310768/4984303/assets/mobile-video-CAp7RInW.mp4",
       "sourceUrl": "https://www.hallidayglobal.com/",
       "publishedAt": "2026-07-21",
       "thumbnail": "",
