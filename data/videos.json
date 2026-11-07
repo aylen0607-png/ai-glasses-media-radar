@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-11-06T08:54:58.941Z",
+  "updatedAt": "2026-11-07T08:16:23.744Z",
   "videos": [
+    {
+      "id": "even-g2-yt-j1npbbZDfdk",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Which Even G2 Frame Would You Choose?",
+      "url": "https://www.youtube.com/watch?v=j1npbbZDfdk",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/j1npbbZDfdk/maxresdefault.jpg",
+      "description": "Classic neutrals or a pop of color? Different styles, same Even G2 technology. Which frame would you wear every day? Tell us in the comments. Explore Even G2 https://evenrealities.bio/ytb",
+      "publishedAt": "2026-11-06T12:17:19Z",
+      "verified": true
+    },
     {
       "id": "even-g2-yt-zxYVDMEqoKw",
       "brand": "Even Realities",
@@ -39,7 +53,7 @@
       "url": "https://www.youtube.com/watch?v=3jkvXUaFllc",
       "sourceUrl": "https://www.youtube.com/@EvenRealities",
       "thumbnail": "https://i.ytimg.com/vi/3jkvXUaFllc/maxresdefault.jpg",
-      "description": "We put Even G2 to the test with the people who know eyewear best. What would you ask an optical professional about Even G2?",
+      "description": "We put Even G2 to the test with the people who know eyewear best. What would you ask an optical professional about Even G2? https://evenrealities.bio/ytb",
       "publishedAt": "2026-11-03T13:00:20Z",
       "verified": true
     },
@@ -95,7 +109,7 @@
       "url": "https://www.youtube.com/watch?v=2StsRcKDaRg",
       "sourceUrl": "https://www.youtube.com/@EvenRealities",
       "thumbnail": "https://i.ytimg.com/vi/2StsRcKDaRg/maxresdefault.jpg",
-      "description": "Eyewear pros and stylists share their first reactions to Even G2 Brown 2. Learn more: https://evenrealities.bio/ytb",
+      "description": "Eyewear pros and stylists share their first reactions to Even G2 Brown 2. https://evenrealities.bio/ytb Learn more: https://evenrealities.bio/ytb",
       "publishedAt": "2026-10-28T13:00:12Z",
       "verified": true
     },
@@ -1505,7 +1519,7 @@
       "region": "海外",
       "type": "Official video",
       "title": "Halliday G2（预售）",
-      "url": "https://cdn.shopify.com/oxygen-v2/56919/151838/310768/4984303/assets/desktop-video-BRJXW1zh.mp4",
+      "url": "https://cdn.shopify.com/oxygen-v2/56919/151838/310768/4985277/assets/desktop-video-BRJXW1zh.mp4",
       "sourceUrl": "https://www.hallidayglobal.com/",
       "publishedAt": "2026-07-21",
       "thumbnail": "",
@@ -1518,7 +1532,7 @@
       "region": "海外",
       "type": "Official video",
       "title": "Halliday G2（预售）",
-      "url": "https://cdn.shopify.com/oxygen-v2/56919/151838/310768/4984303/assets/mobile-video-CAp7RInW.mp4",
+      "url": "https://cdn.shopify.com/oxygen-v2/56919/151838/310768/4985277/assets/mobile-video-CAp7RInW.mp4",
       "sourceUrl": "https://www.hallidayglobal.com/",
       "publishedAt": "2026-07-21",
       "thumbnail": "",
