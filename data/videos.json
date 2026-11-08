@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-11-07T08:16:23.744Z",
+  "updatedAt": "2026-11-08T08:32:25.462Z",
   "videos": [
+    {
+      "id": "rokid-video-yt-I90KwnMHlag",
+      "brand": "Rokid",
+      "product": "Rokid Glasses / Style",
+      "region": "中国 / 全球",
+      "type": "Official YouTube video",
+      "title": "What's in Front of Me? Ask Rokid Glasses | Niagara Falls",
+      "url": "https://www.youtube.com/watch?v=I90KwnMHlag",
+      "sourceUrl": "https://www.youtube.com/@rokidglobal",
+      "thumbnail": "https://i.ytimg.com/vi/I90KwnMHlag/maxresdefault.jpg",
+      "description": "Look up. Ask anything. Let the world answer. At Niagara Falls, a simple question turns the view into a conversation. Watch Rokid Glasses identify Horseshoe Falls and share more about the scene in front of you. What would you ask Rokid on your next trip? #Rokid #RokidGlasses #AIGlasses #NiagaraFalls #shortsvideo",
+      "publishedAt": "2026-11-07T15:00:53Z",
+      "verified": true
+    },
     {
       "id": "even-g2-yt-j1npbbZDfdk",
       "brand": "Even Realities",
