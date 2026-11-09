@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-11-08T08:32:25.462Z",
+  "updatedAt": "2026-11-09T09:02:28.195Z",
   "videos": [
+    {
+      "id": "even-g2-yt-NLlq1z-L6kw",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Meet Knowledge Base (Beta) for Even G2.",
+      "url": "https://www.youtube.com/watch?v=NLlq1z-L6kw",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/NLlq1z-L6kw/maxresdefault.jpg",
+      "description": "Turn selected conversations and documents into a growing personal knowledge base that helps Even AI understand your context, personalize responses, and provide more relevant insights through your smart glasses. Discover a more personalized AI experience. Learn more: https://evenrealities.bio/ytb",
+      "publishedAt": "2026-11-08T13:00:39Z",
+      "verified": true
+    },
     {
       "id": "rokid-video-yt-I90KwnMHlag",
       "brand": "Rokid",
