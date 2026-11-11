@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-11-10T09:12:32.170Z",
+  "updatedAt": "2026-11-11T08:48:58.535Z",
   "videos": [
+    {
+      "id": "even-g2-yt-APaE_xPPXEo",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Your Morning News.",
+      "url": "https://www.youtube.com/watch?v=APaE_xPPXEo",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/APaE_xPPXEo/maxresdefault.jpg",
+      "description": "We know checking the news is one of the first things you do when you put on your Even G2. And honestly, we get it. With the News feature, catch up on the latest headlines directly in your field of view. Learn more: https://evenrealities.bio/ytb",
+      "publishedAt": "2026-11-10T13:00:12Z",
+      "verified": true
+    },
     {
       "id": "even-g2-yt-NLlq1z-L6kw",
       "brand": "Even Realities",
