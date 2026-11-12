@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-11-11T08:48:58.535Z",
+  "updatedAt": "2026-11-12T09:14:24.513Z",
   "videos": [
+    {
+      "id": "rokid-video-yt-oW24IvaZ43E",
+      "brand": "Rokid",
+      "product": "Rokid Glasses / Style",
+      "region": "中国 / 全球",
+      "type": "Official YouTube video",
+      "title": "Snowy Horseback Ride #RokidGlasses #HandsFreeRecording #POV #horseriding #rokidglasses #rokid",
+      "url": "https://www.youtube.com/watch?v=oW24IvaZ43E",
+      "sourceUrl": "https://www.youtube.com/@rokidglobal",
+      "thumbnail": "https://i.ytimg.com/vi/oW24IvaZ43E/maxresdefault.jpg",
+      "description": "Snow-covered trails and mountain views, captured hands-free with Rokid Glasses. Experience the ride from the rider’s perspective.",
+      "publishedAt": "2026-11-12T06:39:21Z",
+      "verified": true
+    },
     {
       "id": "even-g2-yt-APaE_xPPXEo",
       "brand": "Even Realities",
@@ -1561,7 +1575,7 @@
       "region": "海外",
       "type": "Official video",
       "title": "Halliday G2（预售）",
-      "url": "https://cdn.shopify.com/oxygen-v2/56919/151838/310768/5019060/assets/desktop-video-BRJXW1zh.mp4",
+      "url": "https://cdn.shopify.com/oxygen-v2/56919/151838/310768/5048130/assets/desktop-video-BRJXW1zh.mp4",
       "sourceUrl": "https://www.hallidayglobal.com/",
       "publishedAt": "2026-07-21",
       "thumbnail": "",
@@ -1574,7 +1588,7 @@
       "region": "海外",
       "type": "Official video",
       "title": "Halliday G2（预售）",
-      "url": "https://cdn.shopify.com/oxygen-v2/56919/151838/310768/5019060/assets/mobile-video-CAp7RInW.mp4",
+      "url": "https://cdn.shopify.com/oxygen-v2/56919/151838/310768/5048130/assets/mobile-video-CAp7RInW.mp4",
       "sourceUrl": "https://www.hallidayglobal.com/",
       "publishedAt": "2026-07-21",
       "thumbnail": "",
