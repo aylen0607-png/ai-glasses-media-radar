@@ -1,6 +1,62 @@
 {
-  "updatedAt": "2026-11-12T09:14:24.513Z",
+  "updatedAt": "2026-11-13T09:02:13.800Z",
   "videos": [
+    {
+      "id": "halliday-g2-yt-qr1vAY3kA1c",
+      "brand": "Halliday",
+      "product": "Halliday G2（预售）",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Halliday G2, Your Everyday AI Display Glasses",
+      "url": "https://www.youtube.com/watch?v=qr1vAY3kA1c",
+      "sourceUrl": "https://www.youtube.com/@Halliday_Global",
+      "thumbnail": "https://i.ytimg.com/vi/qr1vAY3kA1c/maxresdefault.jpg",
+      "description": "Take calls, enjoy music, get AI assistance, and connect across languages, all in one pair of glasses. #HallidayG2 #AIGlasses #Technology #Halliday #WearableTech",
+      "publishedAt": "2026-11-12T13:00:33Z",
+      "verified": true
+    },
+    {
+      "id": "rokid-video-yt-MsDJd19Nykg",
+      "brand": "Rokid",
+      "product": "Rokid Glasses / Style",
+      "region": "中国 / 全球",
+      "type": "Official YouTube video",
+      "title": "Unbox, Put On, Say \"Hi Rokid\" | Rokid Glasses",
+      "url": "https://www.youtube.com/watch?v=MsDJd19Nykg",
+      "sourceUrl": "https://www.youtube.com/@rokidglobal",
+      "thumbnail": "https://i.ytimg.com/vi/MsDJd19Nykg/maxresdefault.jpg",
+      "description": "Out of the box and onto your face. Pair Rokid Glasses with the Hi Rokid app, then just say \"Hi Rokid\" to wake the AI assistant. Ask about what you're looking at, and the answer appears right in your lenses. Learn more: global.rokid.com #RokidGlasses #AIGlasses #HiRokid #Unboxing",
+      "publishedAt": "2026-11-12T12:10:07Z",
+      "verified": true
+    },
+    {
+      "id": "rokid-video-yt-5wuS3zNka8s",
+      "brand": "Rokid",
+      "product": "Rokid Glasses / Style",
+      "region": "中国 / 全球",
+      "type": "Official YouTube video",
+      "title": "Rokid Glasses: The Display Lives in the Lens #rokidglasses #rokid #aiglasses",
+      "url": "https://www.youtube.com/watch?v=5wuS3zNka8s",
+      "sourceUrl": "https://www.youtube.com/@rokidglobal",
+      "thumbnail": "https://i.ytimg.com/vi/5wuS3zNka8s/maxresdefault.jpg",
+      "description": "A closer look at Rokid Glasses. A binocular Micro LED display shows up right in your lenses: the time, your apps and the teleprompter, all in your line of sight. All in a 49g frame. Learn more: global.rokid.com #RokidGlasses #AIGlasses #SmartGlasses #MicroLED",
+      "publishedAt": "2026-11-12T12:05:55Z",
+      "verified": true
+    },
+    {
+      "id": "rokid-video-yt-KVLAWhPnf5I",
+      "brand": "Rokid",
+      "product": "Rokid Glasses / Style",
+      "region": "中国 / 全球",
+      "type": "Official YouTube video",
+      "title": "What's in the Box? Rokid Glasses Unboxing#rokidglasses #rokid #aiglasses",
+      "url": "https://www.youtube.com/watch?v=KVLAWhPnf5I",
+      "sourceUrl": "https://www.youtube.com/@rokidglobal",
+      "thumbnail": "https://i.ytimg.com/vi/KVLAWhPnf5I/maxresdefault.jpg",
+      "description": "Unboxing Rokid Glasses: 49g AI glasses with a binocular Micro LED display and a 12MP Sony camera. In the box: · Rokid Glasses · Glasses storage case · Magnetic charging cable · Cleaning cloth · Interchangeable nose pads · User manual Learn more: global.rokid.com #RokidGlasses #AIGlasses #Unboxing #SmartGlasses",
+      "publishedAt": "2026-11-12T12:04:22Z",
+      "verified": true
+    },
     {
       "id": "rokid-video-yt-oW24IvaZ43E",
       "brand": "Rokid",
