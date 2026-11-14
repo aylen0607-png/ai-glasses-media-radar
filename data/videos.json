@@ -1,6 +1,48 @@
 {
-  "updatedAt": "2026-11-13T09:02:13.800Z",
+  "updatedAt": "2026-11-14T08:32:50.263Z",
   "videos": [
+    {
+      "id": "rayban-meta-yt-a8ODBumndvY",
+      "brand": "Meta × Ray-Ban",
+      "product": "Ray-Ban Meta Gen 2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "💋Pre-show with @dojacat and her band, through their eyes. Fully present, hands-free.",
+      "url": "https://www.youtube.com/watch?v=a8ODBumndvY",
+      "sourceUrl": "https://www.youtube.com/@raybanmeta",
+      "thumbnail": "https://i.ytimg.com/vi/a8ODBumndvY/maxresdefault.jpg",
+      "description": "Shot with Ray-Ban Meta. 🪩",
+      "publishedAt": "2026-11-13T22:06:25Z",
+      "verified": true
+    },
+    {
+      "id": "rokid-video-yt-VDsvIJE1vvA",
+      "brand": "Rokid",
+      "product": "Rokid Glasses / Style",
+      "region": "中国 / 全球",
+      "type": "Official YouTube video",
+      "title": "Rokid Black Friday LIVE 🔴 Style $279 & Spatial $359",
+      "url": "https://www.youtube.com/watch?v=VDsvIJE1vvA",
+      "sourceUrl": "https://www.youtube.com/@rokidglobal",
+      "thumbnail": "https://i.ytimg.com/vi/VDsvIJE1vvA/maxresdefault.jpg?v=6af74652",
+      "description": "Black Friday prices. Unlocked early. 🔥 Join Rokid LIVE and take a closer look at Rokid Style and Rokid Spatial. 🕶️ Rokid Style — $279 with discount code LIVE1 🕶️ Rokid Spatial — $359 with discount code LIVE2 📅 Limited-time offers: Nov 13–Nov 18, 2026 Scan the product QR code shown in the livestream, add your product to cart, and enter the matching discou",
+      "publishedAt": "2026-11-13T17:18:08Z",
+      "verified": true
+    },
+    {
+      "id": "even-g2-yt-llg178Kkhuo",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "What Do Optical Experts Think of Even G2 Brown 2? | SILMO Paris",
+      "url": "https://www.youtube.com/watch?v=llg178Kkhuo",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/llg178Kkhuo/maxresdefault.jpg",
+      "description": "Specs tell you what a product does. Opinions tell you whether it belongs. At SILMO Paris, we asked optical professionals to share their thoughts on Even G2 in Brown 2. Here's what they had to say. Learn more: https://evenrealities.bio/ytb",
+      "publishedAt": "2026-11-13T13:00:04Z",
+      "verified": true
+    },
     {
       "id": "halliday-g2-yt-qr1vAY3kA1c",
       "brand": "Halliday",
