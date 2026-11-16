@@ -1,6 +1,34 @@
 {
-  "updatedAt": "2026-11-15T08:47:51.516Z",
+  "updatedAt": "2026-11-16T08:58:12.711Z",
   "videos": [
+    {
+      "id": "rokid-video-yt-loQPkRWW7v8",
+      "brand": "Rokid",
+      "product": "Rokid Glasses / Style",
+      "region": "中国 / 全球",
+      "type": "Official YouTube video",
+      "title": "Your Navigation, Right in Your Glasses 👓 #rokid#RokidGlasses #smartglasses #ARNavigation#handsfree",
+      "url": "https://www.youtube.com/watch?v=loQPkRWW7v8",
+      "sourceUrl": "https://www.youtube.com/@rokidglobal",
+      "thumbnail": "https://i.ytimg.com/vi/loQPkRWW7v8/maxresdefault.jpg",
+      "description": "Get directions right in your field of view with Rokid Glasses. Follow your route while your phone stays in your pocket.",
+      "publishedAt": "2026-11-16T06:10:18Z",
+      "verified": true
+    },
+    {
+      "id": "rokid-video-yt-BPQi7Tl65Jw",
+      "brand": "Rokid",
+      "product": "Rokid Glasses / Style",
+      "region": "中国 / 全球",
+      "type": "Official YouTube video",
+      "title": "Rokid Black Friday LIVE 🔴 Style $279 & Spatial $359",
+      "url": "https://www.youtube.com/watch?v=BPQi7Tl65Jw",
+      "sourceUrl": "https://www.youtube.com/@rokidglobal",
+      "thumbnail": "https://i.ytimg.com/vi/BPQi7Tl65Jw/maxresdefault.jpg",
+      "description": "Black Friday prices. Unlocked early. 🔥 Join Rokid LIVE and take a closer look at Rokid Style and Rokid Spatial. 🕶️ Rokid Style — $279 with discount code LIVE1 🕶️ Rokid Spatial — $359 with discount code LIVE2 📅 Limited-time offers: Nov 13–Nov 18, 2026 Scan the product QR code shown in the livestream, add your product to cart, and enter the matching discou",
+      "publishedAt": "2026-11-16T04:14:40Z",
+      "verified": true
+    },
     {
       "id": "rayban-meta-yt-a8ODBumndvY",
       "brand": "Meta × Ray-Ban",
