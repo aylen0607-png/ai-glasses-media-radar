@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-11-16T08:58:12.711Z",
+  "updatedAt": "2026-11-17T10:08:06.142Z",
   "videos": [
+    {
+      "id": "even-g2-yt-ODC9BmNwZdA",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Built by You, Episode 3: Conference Confetti",
+      "url": "https://www.youtube.com/watch?v=ODC9BmNwZdA",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/ODC9BmNwZdA/maxresdefault.jpg",
+      "description": "Meet JeffXR, a Netherlands-born, California-based developer who researches and builds human-centered tech. From his PhD research on adaptive interface design to conferences and concerts, Jeff is all about making technology feel effortless to use. His latest creation, Conference Confetti, is a universal conference guide for Even G2. Arrive at a new event and ",
+      "publishedAt": "2026-11-16T14:00:08Z",
+      "verified": true
+    },
     {
       "id": "rokid-video-yt-loQPkRWW7v8",
       "brand": "Rokid",
@@ -1413,34 +1427,6 @@
       "thumbnail": "https://i.ytimg.com/vi/FNeiGNWAh0w/maxresdefault.jpg",
       "description": "The Rokid Agent Store is now live. Built for Rokid Glasses, the Agent Store brings together AI-powered experiences for games, everyday life, work, and learning. Discover Agents such as Flash Fighter for hands-free gaming, WhatToEatToday for meal ideas, Pomodoro for staying focused, and Word Catch for language practice. Simply find the Agent you want in the H",
       "publishedAt": "2026-08-06T04:34:41Z",
-      "verified": true
-    },
-    {
-      "id": "even-g2-yt-hjZDZtTwd1Y",
-      "brand": "Even Realities",
-      "product": "Even G2",
-      "region": "海外",
-      "type": "Official YouTube video",
-      "title": "Even Sessions Ep. 1 Out Now",
-      "url": "https://www.youtube.com/watch?v=hjZDZtTwd1Y",
-      "sourceUrl": "https://www.youtube.com/@EvenRealities",
-      "thumbnail": "https://i.ytimg.com/vi/hjZDZtTwd1Y/maxresdefault.jpg",
-      "description": "Could smart glasses change the way we approach cold calls? Sara Uy tests Even G2 in the latest episode of Even Sessions. Watch the full video now. Learn more: https://evenrealities.bio/ytb",
-      "publishedAt": "2026-08-05T14:10:38Z",
-      "verified": true
-    },
-    {
-      "id": "even-g2-yt-wdAYK4SZ5OE",
-      "brand": "Even Realities",
-      "product": "Even G2",
-      "region": "海外",
-      "type": "Official YouTube video",
-      "title": "Can Smart Glasses Make Cold Calling Easier? | Even Sessions EP. 1",
-      "url": "https://www.youtube.com/watch?v=wdAYK4SZ5OE",
-      "sourceUrl": "https://www.youtube.com/@EvenRealities",
-      "thumbnail": "https://i.ytimg.com/vi/wdAYK4SZ5OE/maxresdefault.jpg",
-      "description": "In this episode of Even Sessions, Haley sits down with Sarah Forbes, 30 Under 30 founder and better known online as Selling Sarah, to explore one of the toughest skills in sales: starting a conversation with someone who was not expecting your call. Sarah shares how posting live cold calls and practical sales advice led her to launch Selling Sarah in 2024. To",
-      "publishedAt": "2026-08-05T14:06:14Z",
       "verified": true
     },
     {
