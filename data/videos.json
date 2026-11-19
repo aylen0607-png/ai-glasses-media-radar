@@ -1,18 +1,32 @@
 {
-  "updatedAt": "2026-11-18T09:42:23.324Z",
+  "updatedAt": "2026-11-19T09:51:08.188Z",
   "videos": [
     {
-      "id": "rokid-video-yt-RavrDykhdfI",
+      "id": "rokid-video-yt-5JdFLkxfMYo",
       "brand": "Rokid",
       "product": "Rokid Glasses / Style",
       "region": "中国 / 全球",
       "type": "Official YouTube video",
-      "title": "Rokid Black Friday LIVE 🔴 Style $279 & Spatial $359",
-      "url": "https://www.youtube.com/watch?v=RavrDykhdfI",
+      "title": "Rokid Glasses Now Support Arabic as a System Language",
+      "url": "https://www.youtube.com/watch?v=5JdFLkxfMYo",
       "sourceUrl": "https://www.youtube.com/@rokidglobal",
-      "thumbnail": "https://i.ytimg.com/vi/RavrDykhdfI/maxresdefault.jpg",
-      "description": "Black Friday prices. Unlocked early. 🔥 Join Rokid LIVE and take a closer look at Rokid Style and Rokid Spatial. 🕶️ Rokid Style — $279 with discount code LIVE1 🕶️ Rokid Spatial — $359 with discount code LIVE2 📅 Limited-time offers: Nov 13–Nov 18, 2026 Scan the product QR code shown in the livestream, add your product to cart, and enter the matching discou",
-      "publishedAt": "2026-11-18T05:06:18Z",
+      "thumbnail": "https://i.ytimg.com/vi/5JdFLkxfMYo/maxresdefault.jpg",
+      "description": "Rokid Glasses are the first AI glasses to support Arabic as a system language. See the Arabic interface in the Hi Rokid app and on the glasses, with demos of live translation, the teleprompter, and navigation. #Rokid #RokidGlasses #AIGlasses",
+      "publishedAt": "2026-11-19T07:03:33Z",
+      "verified": true
+    },
+    {
+      "id": "even-g2-yt-eyPgANcSCnA",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Even G2: Every Angle",
+      "url": "https://www.youtube.com/watch?v=eyPgANcSCnA",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/eyPgANcSCnA/maxresdefault.jpg",
+      "description": "Control what notifications you see on Even G2.",
+      "publishedAt": "2026-11-18T14:00:13Z",
       "verified": true
     },
     {
@@ -41,20 +55,6 @@
       "thumbnail": "https://i.ytimg.com/vi/loQPkRWW7v8/maxresdefault.jpg",
       "description": "Get directions right in your field of view with Rokid Glasses. Follow your route while your phone stays in your pocket.",
       "publishedAt": "2026-11-16T06:10:18Z",
-      "verified": true
-    },
-    {
-      "id": "rokid-video-yt-BPQi7Tl65Jw",
-      "brand": "Rokid",
-      "product": "Rokid Glasses / Style",
-      "region": "中国 / 全球",
-      "type": "Official YouTube video",
-      "title": "Rokid Black Friday LIVE 🔴 Style $279 & Spatial $359",
-      "url": "https://www.youtube.com/watch?v=BPQi7Tl65Jw",
-      "sourceUrl": "https://www.youtube.com/@rokidglobal",
-      "thumbnail": "https://i.ytimg.com/vi/BPQi7Tl65Jw/maxresdefault.jpg",
-      "description": "Black Friday prices. Unlocked early. 🔥 Join Rokid LIVE and take a closer look at Rokid Style and Rokid Spatial. 🕶️ Rokid Style — $279 with discount code LIVE1 🕶️ Rokid Spatial — $359 with discount code LIVE2 📅 Limited-time offers: Nov 13–Nov 18, 2026 Scan the product QR code shown in the livestream, add your product to cart, and enter the matching discou",
-      "publishedAt": "2026-11-16T04:14:40Z",
       "verified": true
     },
     {
