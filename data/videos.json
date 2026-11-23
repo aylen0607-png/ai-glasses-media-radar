@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T09:18:46.876Z",
+  "updatedAt": "2026-11-23T10:15:36.812Z",
   "videos": [
     {
       "id": "rayban-meta-yt-K1uKGw6Vho4",
@@ -2024,6 +2024,19 @@
       "sourceUrl": "https://global.rokid.com/pages/video-gallery",
       "thumbnail": "",
       "publishedAt": "2026-07-13",
+      "verified": true
+    },
+    {
+      "id": "rokid-glasses-4-aHR0cHM6L",
+      "brand": "Rokid",
+      "product": "Rokid Glasses",
+      "region": "中国 / 全球",
+      "type": "Official video",
+      "title": "Rokid Glasses",
+      "url": "https://youtube.com/embed/$%7BextId%7D",
+      "sourceUrl": "https://global.rokid.com/products/rokid-glasses",
+      "publishedAt": "2026-07-10",
+      "thumbnail": "",
       "verified": true
     },
     {
