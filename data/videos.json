@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-11-24T11:58:34.666Z",
+  "updatedAt": "2026-11-25T10:51:05.630Z",
   "videos": [
+    {
+      "id": "rayban-meta-yt-WM2zTCVpJxg",
+      "brand": "Meta × Ray-Ban",
+      "product": "Ray-Ban Meta Gen 2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Holiday set. Hands-free texts. Ray-Ban Meta audio-only Al glasses.",
+      "url": "https://www.youtube.com/watch?v=WM2zTCVpJxg",
+      "sourceUrl": "https://www.youtube.com/@raybanmeta",
+      "thumbnail": "https://i.ytimg.com/vi/WM2zTCVpJxg/maxresdefault.jpg",
+      "description": "",
+      "publishedAt": "2026-11-24T18:56:22Z",
+      "verified": true
+    },
     {
       "id": "rayban-meta-yt-K1uKGw6Vho4",
       "brand": "Meta × Ray-Ban",
