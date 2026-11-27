@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-11-26T10:25:16.254Z",
+  "updatedAt": "2026-11-27T10:29:51.788Z",
   "videos": [
+    {
+      "id": "even-g2-yt-IKdRC6xaFU0",
+      "brand": "Even Realities",
+      "product": "Even G2",
+      "region": "海外",
+      "type": "Official YouTube video",
+      "title": "Our Biggest AI Upgrade Yet | Even Journal EP. 10",
+      "url": "https://www.youtube.com/watch?v=IKdRC6xaFU0",
+      "sourceUrl": "https://www.youtube.com/@EvenRealities",
+      "thumbnail": "https://i.ytimg.com/vi/IKdRC6xaFU0/maxresdefault.jpg",
+      "description": "Your AI shouldn't have to start from zero every time you speak. A single conversation captures information, but meaningful context develops over multiple interactions. With the latest Even app v2.4.0 update, we're introducing three major AI developments in beta: Knowledge Base, Even AI 2.0, and Conversate Pro. In this episode of Even Journal, Troy, our Softw",
+      "publishedAt": "2026-11-26T15:00:15Z",
+      "verified": true
+    },
     {
       "id": "rayban-meta-yt-aMBNhPdS7lA",
       "brand": "Meta × Ray-Ban",
